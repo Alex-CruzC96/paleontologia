@@ -32,7 +32,17 @@ h1{
     overflow: hidden;
 }
 
+.box{
+    width: 35%;
+}
+
 /* Ajuste para pantallas pequeñas */
+@media (max-width:800px) {
+    .box{
+        width: 60%;
+    }
+}
+
 @media (max-width: 550px) {
     #main-container {
         background-position: center center;
@@ -43,5 +53,12 @@ h1{
     }
     h1{
         font-size: 3rem;
+    }
+
+    .box{
+        width: 90%;
+    }
+    .par{
+        font-size: 60%;
     }
 }
