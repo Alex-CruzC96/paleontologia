@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #01182fb4;
+    
 }
 
 h1{
@@ -56,6 +56,10 @@ li:hover .list-text{
 .list-text{
     font-size: 1em;
     color:white;
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
 }
 
 /* Ajuste para pantallas pequeñas */
