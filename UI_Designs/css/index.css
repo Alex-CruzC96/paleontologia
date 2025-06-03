@@ -16,6 +16,23 @@ h1{
     font-size: 5rem;
 }
 
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+}
+li:hover .list-text{
+    color: #505050;
+}
+
 /* Clases */
 
 .par{
@@ -36,10 +53,19 @@ h1{
     width: 35%;
 }
 
+.list-text{
+    font-size: 1em;
+    color:white;
+}
+
 /* Ajuste para pantallas pequeñas */
 @media (max-width:800px) {
     .box{
         width: 60%;
+    }
+
+    .list-text{
+        font-size: 90%;
     }
 }
 
@@ -60,5 +86,8 @@ h1{
     }
     .par{
         font-size: 60%;
+    }
+    .list-text{
+        font-size: 50%;
     }
 }
