@@ -52,6 +52,9 @@ li:hover .list-text{
 .box{
     width: 35%;
 }
+.main-box{
+    width: 60%;
+}
 
 .list-text{
     font-size: 1em;
@@ -61,6 +64,11 @@ li:hover .list-text{
 .title{
     font-family: 'Playfair Display', serif;
 }
+
+.texto{
+    font-size: 1.2rem;
+}
+
 
 @keyframes fadeInUp {
     from {
@@ -72,7 +80,20 @@ li:hover .list-text{
         transform: translateY(0);
     }
 }
+@keyframes opacityFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
 
+.dark{
+    animation: opacityFadeIn 1.6s ease-out forwards;
+    opacity: 0;
+}
 .animate-fade-in-up {
     animation: fadeInUp 1s ease-out forwards;
     opacity: 0;
@@ -86,6 +107,13 @@ li:hover .list-text{
 
     .list-text{
         font-size: 90%;
+    }
+    .main-box{
+        width: 90%;
+    }
+
+    .texto{
+        font-size: 75%;
     }
 }
 
