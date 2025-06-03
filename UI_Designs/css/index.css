@@ -64,6 +64,11 @@ li:hover .list-text{
 .title{
     font-family: 'Playfair Display', serif;
 }
+.subtitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #505050;
+}
 
 .texto{
     font-size: 1.2rem;
