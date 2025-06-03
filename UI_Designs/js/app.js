@@ -3,11 +3,14 @@
 const infoForm = document.querySelector('#infoContainer');
 const glaciacionInfo = document.querySelector('#glaciacionesContainer');
 const capibaraContainer = document.querySelector('#capibaraContainer');
+const gliptodonteContainer = document.querySelector('#gliptodonteContainer');
 
 window.addEventListener('scroll', () =>{
     const rect = infoForm.getBoundingClientRect();
     const rectGlaciacion = glaciacionInfo.getBoundingClientRect();
     const rectCapibara = capibaraContainer.getBoundingClientRect();
+    const rectGliptodonte = gliptodonteContainer.getBoundingClientRect();
+
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
     if (rect.top < windowHeight && rect.bottom > 0) {
         infoForm.classList.add('animate-fade-in-up');
@@ -28,5 +31,12 @@ window.addEventListener('scroll', () =>{
     }
     else{
         capibaraContainer.classList.remove('animate-fade-in-up');
+    }
+
+    if (rectGliptodonte.top < windowHeight && rectGliptodonte.bottom > 0) {
+        gliptodonteContainer.classList.add('animate-fade-in-up');
+    }
+    else{
+        gliptodonteContainer.classList.remove('animate-fade-in-up');
     }
 })
