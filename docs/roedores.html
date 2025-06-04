@@ -112,7 +112,42 @@
             </div>
         </div>
 
-        <div class="row mt-5 row-cols-1 row-cols-md-2">
+        <div class="row text-center mt-5">
+            <div class="col">
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#inferiorInfo"
+                    aria-expanded="false" aria-controls="inferiorInfo">Alimentación</button>
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#medioInfo"
+                    aria-expanded="false" aria-controls="medioInfo">Hábitat</button>
+            </div>
+        </div>
+        <div class="row mt-4 row-cols-1 row-cols-md-2 gap-2 gap-md-0 d-flex justify-content-center">
+            <div class="col col-resize">
+                <div class="collapse multi-collapse collapse-resize" id="inferiorInfo">
+                    <div class="card card-body">
+                        <img class="img-fluid rounded" src="./images/hervíboro.jpg"
+                            alt="Alimentación del capibara gigante">
+                        <p class="info">
+                            El capibara gigante era un herbívoro, se alimentaba principalmente de pastos y otras
+                            plantas acuáticas. Su dieta variada le permitía adaptarse a diferentes hábitats
+                            acuáticos y terrestres.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-resize">
+                <div class="collapse multi-collapse collapse-resize" id="medioInfo">
+                    <div class="card card-body">
+                        <img class="img-fluid rounded" src="./images/humedal.jpeg" alt="Hábitat del capibara gigante">
+                        <p class="info">
+                            El capibara gigante habitaba en ambientes acuáticos y semiacuáticos, como ríos, lagos y
+                            pantanos. Su hábitat variaba desde zonas ribereñas hasta humedales, lo que le permitía
+                            acceder a una amplia variedad de recursos alimenticios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row mt-5 row-cols-1 row-cols-md-2">
             <div class="col">
                 <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#alimentacionInfo"
                     aria-expanded="false" aria-controls="alimentacionInfo">
@@ -154,7 +189,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

@@ -62,6 +62,14 @@ li:hover .list-text{
     color: #505050;
 }
 
+.collapse-resize{
+    width: 20rem;
+}
+.col-resize{
+    display: flex;
+    justify-content: center;
+    flex: 0;
+}
 
 
 @keyframes fadeInUp {
