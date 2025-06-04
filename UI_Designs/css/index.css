@@ -74,6 +74,12 @@ li:hover .list-text{
     font-size: 1.2rem;
 }
 
+.glassBox{
+    background-color: rgba(211, 210, 210, 0.125);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+}
 
 @keyframes fadeInUp {
     from {
