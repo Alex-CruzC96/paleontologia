@@ -149,7 +149,6 @@ li:hover .list-text{
 @media (max-width: 550px) {
     #main-container {
         background-position: center center;
-        /* background-size: contain; */
         background-position: center 40%;
         height: auto;
         padding: 20px 0 !important;

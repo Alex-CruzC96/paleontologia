@@ -1,11 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+}
+
+/*Clases e identificadores*/
 #main-container{
     height: 100vh;
     background-image: url('../images/capibara2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    overflow: hidden;
+}
+
+.box{
+    width: 45%;
+    text-align: center;
+}
+
+@media (max-width:550px) {
+    #main-container{
+        background-position: center center;
+        background-position: center 40%;
+        height: auto;
+        padding: 20px 0 !important;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .box{
+        width: 100%;
+        text-align: start;
+    }
+    .box p{
+        font-size: 68%;
+    }
 }
