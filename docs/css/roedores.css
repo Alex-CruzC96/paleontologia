@@ -27,6 +27,28 @@ h1{
     text-align: center;
 }
 
+.list-text{
+    font-size: 1em;
+    color:white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+}
+li:hover .list-text{
+    color: #505050;
+}
+
+
 @media (max-width:550px) {
     #main-container{
         background-position: center center;
@@ -43,5 +65,12 @@ h1{
     }
     .box p{
         font-size: 68%;
+    }
+
+    .list-text{
+        font-size: 50%;
+    }
+    .title-header{
+        font-size: 60%;
     }
 }
