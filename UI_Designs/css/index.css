@@ -76,9 +76,27 @@ li:hover .list-text{
 
 .glassBox{
     background-color: rgba(211, 210, 210, 0.125);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 15rem;
     height: 15rem;
     border-radius: 20px;
+    cursor: pointer;
+}
+.glassBox:hover {
+    background-color: rgba(211, 210, 210, 0.25);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.glassBox:hover .glass-card-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.glass-card-image{
+    width: 70%;
+}
+
+.glass-card-title{
+    padding-top: 10px;
 }
 
 @keyframes fadeInUp {
