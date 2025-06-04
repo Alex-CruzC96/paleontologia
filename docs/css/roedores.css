@@ -48,6 +48,41 @@ li:hover .list-text{
     color: #505050;
 }
 
+.info{
+    text-align: justify;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes opacityFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.dark{
+    animation: opacityFadeIn 1.6s ease-out forwards;
+    opacity: 0;
+}
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+
 
 @media (max-width:550px) {
     #main-container{
@@ -63,7 +98,7 @@ li:hover .list-text{
         width: 100%;
         text-align: start;
     }
-    .box p{
+    .box .text{
         font-size: 68%;
     }
 
