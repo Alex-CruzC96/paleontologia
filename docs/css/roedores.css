@@ -52,6 +52,17 @@ li:hover .list-text{
     text-align: justify;
 }
 
+.title{
+    font-family: 'Playfair Display', serif;
+}
+
+.subtitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #505050;
+}
+
+
 
 @keyframes fadeInUp {
     from {
