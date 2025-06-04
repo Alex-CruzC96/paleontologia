@@ -144,6 +144,11 @@ li:hover .list-text{
     .texto{
         font-size: 75%;
     }
+
+    .glassBox{
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media (max-width: 550px) {
@@ -166,4 +171,15 @@ li:hover .list-text{
     .list-text{
         font-size: 50%;
     }
+}
+
+@media (max-width:330px) {
+    .glassBox{
+        width: 8rem;
+        height: 8rem;
+    }
+    .glass-card-title{
+        font-size: 78%;
+    }
+    
 }
