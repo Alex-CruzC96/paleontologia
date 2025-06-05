@@ -62,16 +62,27 @@
             </div>
         </div>
 
-        <div class="row text-center mt-4 row-cols-1">
+        <div class="row mt-4 row-cols-1 row-cols-md-2">
+            <div class="col text-center">
+                <img class="img img-fluid rounded shadow w-50" src="./images/fósiles-artiodáctilos.jpg" />
+                <figcaption class="blockquote-footer pt-4">
+                    Imagen tomada de <cite title="Source Title">Algún lugar</cite>
+                </figcaption>
+            </div>
             <div class="col">
-                <img class="img img-fluid rounded shadow w-25 img-resize" src="./images/fósiles-artiodáctilos.jpg" />
-            </div>
-            <div class="col pt-2">
-                <h6 class="card-subtitle mb-2 text-body-secondary">Fósil de...</h6>
-            </div>
-            <div class="col my-4">
+                <p class="info">
+                    Los fósiles de estos animales han confirmado su existencia hace 54 millones de años, en el período
+                    Eoceno, actualmente el orden incluye 10 familias, 86 géneros y más de 220 especies. Gran parte de
+                    estos animales han sido domesticados y utilizados con fines productivos por el ser humano, como las
+                    vacas, los cerdos, las ovejas y las llamas.
+                    En las minas de Simojovel de Allende, Chiapas, fueron encontrados dientes fósiles de un grupo de
+                    artiodáctilos llamados antracoterios, de acuerdo a un artículo publicado en la revista de difusión
+                    científica Earth and Environmental Science Transactions of the Royal Society of Edinburgh. Este tipo
+                    de hallazgo se da por primera vez en México, ya que solo se habían reportado en Canadá, Estados
+                    Unidos y Panamá.
+                </p>
                 <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#fosilModal">
-                    Información
+                    Leer más
                 </button>
             </div>
         </div>
@@ -79,14 +90,30 @@
 
     <!-- Modal -->
     <div class="modal fade" id="fosilModal" tabindex="-1" aria-labelledby="fosilModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="fosilModalLabel">Modal title</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    ...El hallazgo realizado por un grupo de reconocidos expertos mexicanos, entre los que se encuentra
+                    un investigador de la Secretaría de Medio Ambiente e Historia Natural (Semahn) data de hace 23
+                    millones de años. Así mismo en la localidad de Yolomécatl, Oaxaca, fueron reportados otros restos
+                    con una edad de 30 millones de años.
+
+                    El investigador adscrito al Museo de Paleontología Eliseo Palacios Aguilera, de la Semahn, quien es
+                    uno de los autores de este estudio indicó que estos descubrimientos son de gran relevancia, ya que
+                    aportan conocimientos para entender cómo era la vida en México hace millones de años, qué relación
+                    tenía la fauna y flora con las de otras regiones del mundo y qué factores influyeron en su
+                    extinción.
+
+                    Cabe mencionar que los antracoterios (Familia Anthracotheriidae), son un grupo extinto de
+                    artiodáctilos, lejanamente emparentados con los hipopótamos y ballenas, que vivió en Asia, Europa,
+                    parte de África y América desde mediados del Eoceno hasta principios del Mioceno, sin embargo,
+                    fósiles de estos animales no habían sido encontrados en México hasta este reporte publicado en el
+                    presente año, donde Chiapas nuevamente da el registro paleontológico de piezas únicas que cambian la
+                    historia hasta ahora conocida sobre la paleo diversidad de la fauna.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
