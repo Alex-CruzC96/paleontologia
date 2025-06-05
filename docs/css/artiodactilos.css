@@ -17,16 +17,21 @@
     padding-right: 10%;
 }
 
+@media (max-width: 835px) {
+    .medium-col{
+        flex-direction: column;
+        padding-top: 0;
+        padding-right: 0;
+        padding-top: 2%;
+    }
+}
+
 @media (max-width:550px) {
     #page-title{
         background-position: center center;
         background-position: center 40%;
         height: auto;
         padding: 20px 0 !important;
-    }
-    .medium-col{
-        flex-direction: column;
         padding-top: 0;
-        padding-right: 0;
     }
 }
