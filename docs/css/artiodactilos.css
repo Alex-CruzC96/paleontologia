@@ -8,22 +8,8 @@
     overflow: hidden;
 }
 
-.medium-col{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    padding-top: 12%;
-    padding-right: 10%;
-}
-
 @media (max-width: 835px) {
-    .medium-col{
-        flex-direction: column;
-        padding-top: 0;
-        padding-right: 0;
-        padding-top: 2%;
-    }
+
 }
 
 @media (max-width:550px) {
