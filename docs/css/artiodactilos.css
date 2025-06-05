@@ -8,6 +8,14 @@
     overflow: hidden;
 }
 
+#container-image{
+    height: 35rem;
+    background-image: url('../images/venado2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -130px;
+}
+
 @media (max-width: 835px) {
 
 }
@@ -19,6 +27,10 @@
         height: auto;
         padding: 20px 0 !important;
         padding-top: 0;
+    }
+
+    #container-image{
+        background-position: -120px 0;
     }
 
     .img-resize{
