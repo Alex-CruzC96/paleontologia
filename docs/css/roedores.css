@@ -50,6 +50,8 @@ li:hover .list-text{
 
 .info{
     text-align: justify;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title{
