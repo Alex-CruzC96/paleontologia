@@ -9,19 +9,23 @@
 }
 
 #container-image{
-    height: 35rem;
+    height: 28rem;
     background-image: url('../images/venado2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center -130px;
+    background-position: center 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    padding-right: 20rem;
 }
 
 @media (max-width: 835px) {
-
+    #container-image{
+        align-items: center;
+        padding: 0;
+    }
 }
 
 @media (max-width:550px) {
