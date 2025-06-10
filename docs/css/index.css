@@ -72,6 +72,7 @@ li:hover .list-text{
 
 .texto{
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .glassBox{
