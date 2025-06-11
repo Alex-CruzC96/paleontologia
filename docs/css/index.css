@@ -116,9 +116,20 @@ li:hover .list-text{
 .icon{
     height: 15rem;
 }
+.iFrame{
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: invert(100%);
+}
+.footer-center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*Diseño de lista del footer*/
 .main-footer ul{
     gap: 0;
+    width: 100%;
 }
 .main-footer li{
     background-color: transparent;
