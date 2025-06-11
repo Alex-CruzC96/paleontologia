@@ -1,3 +1,16 @@
 #mainContainer{
-    
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../images/caballos-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:550px) {
+    #mainContainer{
+        background-position: center 40%;
+        height: auto;
+        padding: 20px 0;
+    }
 }
