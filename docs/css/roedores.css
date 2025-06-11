@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 
-h1{
+.title-roedor{
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 5rem;
 }
 
 /*Clases e identificadores*/
-#main-container{
+#main-container2{
     height: 100vh;
     background-image: url('../images/capibara2.jpg');
     background-size: cover;
@@ -22,7 +22,7 @@ h1{
     overflow: hidden;
 }
 
-.box{
+.box-roedor{
     width: 45%;
     text-align: center;
 }
@@ -107,20 +107,20 @@ li:hover .list-text{
 
 
 @media (max-width:550px) {
-    #main-container{
+    #main-container2{
         background-position: center center;
         background-position: center 40%;
         height: auto;
         padding: 20px 0 !important;
     }
-    h1{
+    .title-roedor{
         font-size: 2rem;
     }
-    .box{
+    .box-roedor{
         width: 100%;
         text-align: start;
     }
-    .box .text{
+    .box-roedor .text{
         font-size: 68%;
     }
 
