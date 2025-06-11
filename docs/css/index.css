@@ -108,11 +108,19 @@ li:hover .list-text{
     min-height: 20rem;
     background-color: #384a4f;
     padding: 2rem;
+    padding-right: 0;
+    padding-left: 0;
     overflow: hidden;
 }
 .icon{
-    width: 8rem;
-    
+    height: 15rem;
+}
+.main-footer ul{
+    gap: 0;
+}
+.main-footer li{
+    background-color: transparent;
+    color: white;
 }
 
 @keyframes fadeInUp {
@@ -149,18 +157,18 @@ li:hover .list-text{
     .box{
         width: 60%;
     }
-
+    
     .list-text{
         font-size: 90%;
     }
     .main-box{
         width: 90%;
     }
-
+    
     .texto{
         font-size: 75%;
     }
-
+    
     .glassBox{
         width: 10rem;
         height: 10rem;
@@ -168,6 +176,9 @@ li:hover .list-text{
 }
 
 @media (max-width: 550px) {
+    .icon{
+        height: 8rem;
+    }
     #main-container {
         background-position: center center;
         background-position: center 40%;
