@@ -142,6 +142,7 @@ li:hover .list-text{
     color: white;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
+    text-align: center;
     transition: font-size ease 0.15s;
 }
 .main-footer li:hover{
