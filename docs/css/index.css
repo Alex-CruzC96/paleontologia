@@ -115,12 +115,19 @@ li:hover .list-text{
 .icon{
     height: 15rem;
 }
+/*Diseño de lista del footer*/
 .main-footer ul{
     gap: 0;
 }
 .main-footer li{
     background-color: transparent;
     color: white;
+    font-size: 1.3rem;
+    transition: font-size ease 0.15s;
+}
+.main-footer li:hover{
+    font-size: 1.5rem;
+    transition: font-size ease 0.15s;
 }
 
 @keyframes fadeInUp {
