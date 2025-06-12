@@ -158,10 +158,19 @@ li:hover .list-text{
     padding-top: 0;
     padding-bottom: 2rem;
 }
-.image-col .blockquote-footer{
+.image-col .blockquote-footer, .image-row .blockquote-footer{
     align-self: start;
     /* padding-left: 4rem; */
 } 
+
+/*Diseño de imágenes que estén en una columna sola*/
+.image-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25%;
+}
 
 @keyframes fadeInUp {
     from {
@@ -193,7 +202,7 @@ li:hover .list-text{
 }
 
 /* Ajuste para pantallas pequeñas */
-@media (max-width:800px) {
+@media (max-width:834px) {
     .box{
         width: 60%;
     }
@@ -213,10 +222,17 @@ li:hover .list-text{
         width: 10rem;
         height: 10rem;
     }
-    .image-col .blockquote-footer{
+    .image-col{
+        padding: 0 5%;
+    }
+    .image-col .blockquote-footer, .image-row .blockquote-footer{
         /* padding-left: 2.5rem; */
         font-size: 0.9rem;
     }
+    .image-row{
+        padding: 0 10%;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -246,6 +262,9 @@ li:hover .list-text{
         padding-left: 0;
         align-self: center;
         text-align: center;
+    }
+    .image-col{
+        padding: 0 15%;
     }
 }
 
