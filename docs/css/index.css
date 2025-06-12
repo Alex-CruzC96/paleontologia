@@ -149,6 +149,13 @@ li:hover .list-text{
     transition: font-size ease 0.15s;
 }
 
+.image-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
