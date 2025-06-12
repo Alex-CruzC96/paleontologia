@@ -202,6 +202,11 @@ li:hover .list-text{
 }
 
 /* Ajuste para pantallas pequeñas */
+@media (max-width:991px) {
+    .image-col{
+        padding: 0 5%;
+    }
+}
 @media (max-width:834px) {
     .box{
         width: 60%;
@@ -221,9 +226,6 @@ li:hover .list-text{
     .glassBox{
         width: 10rem;
         height: 10rem;
-    }
-    .image-col{
-        padding: 0 5%;
     }
     .image-col .blockquote-footer, .image-row .blockquote-footer{
         /* padding-left: 2.5rem; */
