@@ -155,6 +155,10 @@ li:hover .list-text{
     align-items: center;
     justify-content: center;
 }
+.image-col .blockquote-footer{
+    align-self: start;
+    padding-left: 4rem;
+} 
 
 @keyframes fadeInUp {
     from {
@@ -186,6 +190,11 @@ li:hover .list-text{
 }
 
 /* Ajuste para pantallas pequeñas */
+@media (min-width:900px) and (max-width:991px) {
+    .image-col .blockquote-footer{
+        padding-left: 3rem;
+    }
+}
 @media (max-width:800px) {
     .box{
         width: 60%;
@@ -206,6 +215,15 @@ li:hover .list-text{
         width: 10rem;
         height: 10rem;
     }
+    .image-col .blockquote-footer{
+        padding-left: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:551px) and (max-width:767px) {
+    .image-col .blockquote-footer{
+        padding-left: 4rem;
+    }    
 }
 
 @media (max-width: 550px) {
@@ -230,6 +248,11 @@ li:hover .list-text{
     }
     .list-text{
         font-size: 50%;
+    }
+    .image-col .blockquote-footer{
+        padding-left: 0;
+        align-self: center;
+        text-align: center;
     }
 }
 
