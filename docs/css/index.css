@@ -156,6 +156,7 @@ li:hover .list-text{
     justify-content: center;
     padding: 5rem;
     padding-top: 0;
+    padding-bottom: 2rem;
 }
 .image-col .blockquote-footer{
     align-self: start;
