@@ -161,7 +161,11 @@ li:hover .list-text{
 .image-col .blockquote-footer, .image-row .blockquote-footer{
     align-self: start;
     /* padding-left: 4rem; */
-} 
+}
+
+#burbuja-movil{
+    display:none;
+}
 
 /*Diseño de imágenes que estén en una columna sola*/
 .image-row{
@@ -236,8 +240,13 @@ li:hover .list-text{
     }
 
     /*Estilos del cabezal y menú de navegación en móviles*/
-    #header{
+    /* #header{
         display: none ;
+    } */
+    #burbuja-movil{
+        display:block;
+        position: fixed;
+        right: 0;
     }
 
 }
