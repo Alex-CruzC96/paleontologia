@@ -154,6 +154,8 @@ li:hover .list-text{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5rem;
+    padding-top: 0;
 }
 .image-col .blockquote-footer{
     align-self: start;
