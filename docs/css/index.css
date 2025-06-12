@@ -235,6 +235,11 @@ li:hover .list-text{
         padding: 0 10%;
     }
 
+    /*Estilos del cabezal y menú de navegación en móviles*/
+    #header{
+        display: none ;
+    }
+
 }
 
 @media (max-width: 550px) {
