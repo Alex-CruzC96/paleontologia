@@ -39,6 +39,8 @@ burbuja.addEventListener('click',() => {
     containers.forEach((el) => {
         el.classList.toggle('blur-container');
     })
+    //Bloquea el scroll hasta que el menú se oculte
+    document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
 });
 
 //Evento de click fuera del menú para ocultarlo
@@ -52,5 +54,7 @@ document.addEventListener('click',(event) =>{
         containers.forEach((el) => {
             el.classList.toggle('blur-container');
         })
+        //Se bloquea el scroll hasta que el menú se oculte
+        document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
     }
 });
