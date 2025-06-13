@@ -260,12 +260,14 @@ li:hover .list-text{
         padding: 2%;
         background-color: var(--glass-box-hover-background);
         box-shadow: var(--shadow-effect);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
         border-radius: 50% 0 0 50%;
         cursor: pointer;
     }
     #burbuja-movil .img-burbuja{
         width: 1.2rem;
-        filter: invert(50%);
+        filter: invert(10%);
     }
 
 }
