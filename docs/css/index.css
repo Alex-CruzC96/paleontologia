@@ -275,20 +275,20 @@ li:hover .list-text{
     }
 
     #burbuja-movil.desplegado{
-        right: calc(50% - 1px);
+        right: calc(70% - 1px);
         transition: right ease-in 0.5s;
     }
 
     #mobil-menu{
         position: fixed;
         display: block;
-        width: 50%;
+        width: 70%;
         height: 100vh;
         background-color: var(--glass-box-hover-background);
         box-shadow: var(--shadow-effect);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        right: -50%;
+        right: -70%;
         transition: right ease-out 0.3s;
     }
     #mobil-menu.desplegado{
