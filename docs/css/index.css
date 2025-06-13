@@ -176,6 +176,9 @@ li:hover .list-text{
 #burbuja-movil{
     display:none;
 }
+#mobil-menu{
+    display: none;
+}
 
 /*Diseño de imágenes que estén en una columna sola*/
 .image-row{
@@ -260,14 +263,33 @@ li:hover .list-text{
         padding: 2%;
         background-color: var(--glass-box-hover-background);
         box-shadow: var(--shadow-effect);
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border-radius: 50% 0 0 50%;
         cursor: pointer;
     }
     #burbuja-movil .img-burbuja{
         width: 1.2rem;
         filter: invert(10%);
+    }
+
+    #burbuja-movil.desplegado{
+        right: calc(50% - 1px);
+    }
+
+    #mobil-menu{
+        position: fixed;
+        display: block;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--glass-box-hover-background);
+        box-shadow: var(--shadow-effect);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        right: -50%;
+    }
+    #mobil-menu.desplegado{
+        right: 0;
     }
 
 }
