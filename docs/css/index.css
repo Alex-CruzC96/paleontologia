@@ -8,6 +8,7 @@
     --footer-main-background:#384a4f;
     --shadow-effect: 0 4px 8px rgba(0, 0, 0, 0.1);
     --shadow-hover-effect: 0 6px 12px rgba(0, 0, 0, 0.2);
+    --light-text-color: #505050;
 }
 
 
@@ -37,7 +38,7 @@ li:hover{
     cursor: pointer;
 }
 li:hover .list-text{
-    color: #505050;
+    color: var(--light-text-color);
 }
 
 /* Clases */
@@ -74,7 +75,7 @@ li:hover .list-text{
 .subtitle{
     font-family: var(--main-font), serif;
     font-size: 1.5rem;
-    color: #505050;
+    color: var(--light-text-color);
 }
 
 .texto{
@@ -301,6 +302,27 @@ li:hover .list-text{
     #mobil-menu.desplegado{
         right: 0;
         transition: right ease-in 0.5s;
+    }
+    /*Contenido del menú móvil*/
+    .contenido-mobil-menu{
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+    .mobil-menu-image{
+        width: 5rem;
+    }
+    .contenido-mobil-menu ul{
+        gap: 0;
+        width: 100%;
+    }
+    .contenido-mobil-menu li{
+        background-color: transparent;
+    }
+    .contenido-mobil-menu a{
+        text-decoration: none;
+        font-family: var(--secondary-font), 'Arial';
+        color: var(--light-text-color);
     }
 
 }
