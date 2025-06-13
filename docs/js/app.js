@@ -31,9 +31,26 @@ window.addEventListener('scroll',()=>{
 
 //Evento para desplegar el menú móvil
 burbuja.addEventListener('click',() => {
+    //Despliegue y repliegue del menú
     burbuja.classList.toggle('desplegado');
     mobilMenu.classList.toggle('desplegado');
+
+    //Desenfoque de todos los contenedores
     containers.forEach((el) => {
         el.classList.toggle('blur-container');
     })
+});
+
+//Evento de click fuera del menú para ocultarlo
+document.addEventListener('click',(event) =>{
+    if(!mobilMenu.contains(event.target) && !burbuja.contains(event.target) && mobilMenu.classList.contains('desplegado')){
+        //Despliegue y repliegue del menú
+        burbuja.classList.toggle('desplegado');
+        mobilMenu.classList.toggle('desplegado');
+
+        //Desenfoque de todos los contenedores
+        containers.forEach((el) => {
+            el.classList.toggle('blur-container');
+        })
+    }
 });
