@@ -267,6 +267,7 @@ li:hover .list-text{
         -webkit-backdrop-filter: blur(8px);
         border-radius: 50% 0 0 50%;
         cursor: pointer;
+        transition: right ease-out 0.3s;
     }
     #burbuja-movil .img-burbuja{
         width: 1.2rem;
@@ -275,6 +276,7 @@ li:hover .list-text{
 
     #burbuja-movil.desplegado{
         right: calc(50% - 1px);
+        transition: right ease-in 0.5s;
     }
 
     #mobil-menu{
@@ -287,9 +289,11 @@ li:hover .list-text{
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         right: -50%;
+        transition: right ease-out 0.3s;
     }
     #mobil-menu.desplegado{
         right: 0;
+        transition: right ease-in 0.5s;
     }
 
 }
