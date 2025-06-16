@@ -31,6 +31,10 @@ ul{
     gap: 20px;
 }
 
+.cursor-normal{
+    cursor: default !important;
+}
+
 li{
     list-style: none;
 }
@@ -120,9 +124,19 @@ li:hover .list-text{
     min-height: 20rem;
     background-color: var(--footer-main-background);
     padding: 2rem;
+    padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
     overflow: hidden;
+}
+.footer-sub-footer{
+    background-color: black;
+    margin-top: 5%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 .icon{
     height: 15rem;
@@ -143,10 +157,28 @@ li:hover .list-text{
     align-items: center;
     justify-content: center;
 }
+.footer-center-row{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:0;
+}
+.footer-center-row ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem !important;
+    justify-content: center;
+    padding: 0 5%;
+}
 /*Diseño de lista del footer*/
 .main-footer ul{
     gap: 0;
     width: 100%;
+    flex-direction: column;
+    padding: 0;
 }
 .main-footer li{
     background-color: transparent;
@@ -158,6 +190,11 @@ li:hover .list-text{
 .main-footer li:hover{
     font-size: 1.5rem;
     transition: font-size ease 0.15s;
+}
+.footer-subtitle{
+    font-family: var(--secondary-font), Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
 }
 
 .image-col{
