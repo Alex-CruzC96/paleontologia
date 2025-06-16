@@ -31,13 +31,13 @@ window.addEventListener('scroll',()=>{
 
 //Evento para desplegar el menú móvil
 burbuja.addEventListener('click',() => {
-    //Bloquea el scroll hasta que el menú se oculte
-    document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
-    
     //Despliegue y repliegue del menú
     burbuja.classList.toggle('desplegado');
     mobilMenu.classList.toggle('desplegado');
-
+    
+    //Bloquea el scroll hasta que el menú se oculte
+    document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
+    
     //Desenfoque de todos los contenedores
     containers.forEach((el) => {
         el.classList.toggle('blur-container');
