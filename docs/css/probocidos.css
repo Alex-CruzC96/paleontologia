@@ -14,14 +14,19 @@
 .header{
     width: 100%;
 }
+@media (max-width:834px) {
+    .header{
+        display: none !important;
+    }
+    #main-container-probocidos{
+        justify-content: center;
+    }
+}
 
 @media (max-width:550px) {
     #main-container-probocidos{
         background-position: center center;
         height: auto;
         padding: 20px 0;
-    }
-    .header{
-        display: none;
     }
 }
