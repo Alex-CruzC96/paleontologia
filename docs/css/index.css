@@ -243,6 +243,9 @@ li:hover .list-text{
 .blur-container{
     filter: blur(1px) !important;
 }
+.darkest-container{
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.5) 100%);
+}
 
 /*Diseños para el modal de previsualización de imágenes*/
 #big-screen{
@@ -256,6 +259,7 @@ li:hover .list-text{
     left:50%;
     transform: translate(-50%,-50%);
     display: none;
+    z-index: 100;
 }
 #big-screen.showed{
     display: block;

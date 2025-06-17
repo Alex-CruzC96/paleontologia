@@ -60,6 +60,9 @@ images.forEach((image) =>{
         //Desenfocar los contenedores
         blurAllContainers();
 
+        //Oscurece los contenedores
+        darkContainers();
+
         //Bloquea el scroll hasta que el modal se oculte
         blockScroll();
 
@@ -87,6 +90,9 @@ document.addEventListener('click',(event) =>{
         //Desenfoque de todos los contenedores
         blurAllContainers();
 
+        //Aclara los contenedores
+        darkContainers();
+
         //Desactiva el bloqueo del scroll
         unblockScroll();
 
@@ -101,6 +107,10 @@ const blurAllContainers = () => {
     containers.forEach((cont) =>{
         cont.classList.toggle('blur-container');
     });
+}
+
+const darkContainers = () =>{
+    document.body.classList.toggle('darkest-container');
 }
 
 const activate = () =>{
