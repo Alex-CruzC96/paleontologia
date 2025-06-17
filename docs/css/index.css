@@ -268,6 +268,12 @@ li:hover .list-text{
     cursor: pointer;
 }
 
+/*Diseño del header especial */
+#header-special{
+    padding: 1.5rem 5%;
+    background-color: black;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -336,7 +342,7 @@ li:hover .list-text{
     }
 
     /*Estilos del cabezal y menú de navegación en móviles*/
-    .header{
+    .header,#header-special{
         display: none ;
     }
     #burbuja-movil{
