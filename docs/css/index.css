@@ -300,7 +300,8 @@ li:hover .list-text{
         padding: 0 5%;
     }
     #big-screen{
-        width: 85%;
+        max-width: 85%;
+        height: auto;
     }
 }
 @media (max-width:834px) {
@@ -435,7 +436,7 @@ li:hover .list-text{
     }
 
     #big-screen{
-        width: 96%;
+        max-width: 96%;
     }
 }
 
