@@ -248,7 +248,7 @@ li:hover .list-text{
 #big-screen{
     position:fixed;
     height: 98vh;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     top:50%;
     bottom:50%;
@@ -256,16 +256,9 @@ li:hover .list-text{
     left:50%;
     transform: translate(-50%,-50%);
     display: none;
-    background-image: url(../images/huesos-perisodactilos.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 #big-screen.showed{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
 @keyframes fadeInUp {

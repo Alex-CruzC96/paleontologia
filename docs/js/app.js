@@ -6,6 +6,12 @@ const burbuja = document.querySelector('#burbuja-movil');
 const mobilMenu = document.querySelector('#mobil-menu')
 //Variable que contiene todos los contenedores
 const containers = document.querySelectorAll('.container,.container-fluid');
+//Variable que contiene todas las imágenes que se podrán visualizar en pantalla grande
+const images = document.querySelectorAll('.prev-image');
+//Variable que contene al modal que se va desplegar
+const modal = document.querySelector('#big-screen');
+//Variable cambiante que ayuda al modal
+let isActive = false;
 
 window.addEventListener('scroll',()=>{
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -39,9 +45,27 @@ burbuja.addEventListener('click',() => {
     document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
     
     //Desenfoque de todos los contenedores
-    containers.forEach((el) => {
-        el.classList.toggle('blur-container');
-    })
+    blurAllContainers();
+});
+
+//Evento de las imágenes que activan el modal de previsualización
+images.forEach((image) =>{
+    image.addEventListener('click',() =>{
+        //Indicarle al modal la imagen
+        modal.src = image.src;
+
+        //Activar el modal
+        modal.classList.toggle('showed');
+
+        //Desenfocar los contenedores
+        blurAllContainers();
+
+        //Bloquea el scroll hasta que el modal se oculte
+        blockScroll();
+
+        //Activa la condición para cerrar el modal
+        activate();
+    });
 });
 
 //Evento de click fuera del menú para ocultarlo
@@ -52,10 +76,45 @@ document.addEventListener('click',(event) =>{
         mobilMenu.classList.toggle('desplegado');
 
         //Desenfoque de todos los contenedores
-        containers.forEach((el) => {
-            el.classList.toggle('blur-container');
-        })
+        blurAllContainers();
         //Se bloquea el scroll hasta que el menú se oculte
         document.body.style.overflow = mobilMenu.classList.contains('desplegado') ? 'hidden' : '';
     }
+    else if(modal.classList.contains('showed') && !modal.contains(event.target) && isActive){
+        //Desactivar el modal
+        modal.classList.toggle('showed');
+
+        //Desenfoque de todos los contenedores
+        blurAllContainers();
+
+        //Desactiva el bloqueo del scroll
+        unblockScroll();
+
+        //Desactiva la función para cerrar el modal
+        activate();
+    }
 });
+
+
+//Métodos
+const blurAllContainers = () => {
+    containers.forEach((cont) =>{
+        cont.classList.toggle('blur-container');
+    });
+}
+
+const activate = () =>{
+    setTimeout(() =>{
+        isActive = !isActive;
+    },500);
+}
+
+const blockScroll = () =>{
+    document.body.style.overflow = 'hidden';
+}
+const unblockScroll = () =>{
+    document.body.style.overflow = '';
+}
+
+
+//Joaquín Eng 
