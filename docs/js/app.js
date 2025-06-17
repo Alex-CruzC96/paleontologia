@@ -51,23 +51,25 @@ burbuja.addEventListener('click',() => {
 //Evento de las imágenes que activan el modal de previsualización
 images.forEach((image) =>{
     image.addEventListener('click',() =>{
-        //Indicarle al modal la imagen
-        modal.src = image.src;
+        if(!isActive){
+            //Indicarle al modal la imagen
+            modal.src = image.src;
 
-        //Activar el modal
-        modal.classList.toggle('showed');
-
-        //Desenfocar los contenedores
-        blurAllContainers();
-
-        //Oscurece los contenedores
-        darkContainers();
-
-        //Bloquea el scroll hasta que el modal se oculte
-        blockScroll();
-
-        //Activa la condición para cerrar el modal
-        activate();
+            //Activar el modal
+            modal.classList.toggle('showed');
+            
+            //Desenfocar los contenedores
+            blurAllContainers();
+            
+            //Oscurece los contenedores
+            darkContainers();
+            
+            //Bloquea el scroll hasta que el modal se oculte
+            blockScroll();
+            
+            //Activa la condición para cerrar el modal
+            activate();
+        }
     });
 });
 
