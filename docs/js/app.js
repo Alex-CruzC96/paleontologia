@@ -125,6 +125,3 @@ const blockScroll = () =>{
 const unblockScroll = () =>{
     document.body.style.overflow = '';
 }
-
-
-//Joaquín Eng 
