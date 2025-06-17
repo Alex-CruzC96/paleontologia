@@ -250,7 +250,7 @@ li:hover .list-text{
 /*Diseños para el modal de previsualización de imágenes*/
 #big-screen{
     position:fixed;
-    height: 98vh;
+    max-height: 98vh;
     width: auto;
     overflow: hidden;
     top:50%;
@@ -298,6 +298,9 @@ li:hover .list-text{
 @media (max-width:991px) {
     .image-col{
         padding: 0 5%;
+    }
+    #big-screen{
+        width: 85%;
     }
 }
 @media (max-width:834px) {
@@ -429,6 +432,10 @@ li:hover .list-text{
     }
     .image-col{
         padding: 0 15%;
+    }
+
+    #big-screen{
+        width: 96%;
     }
 }
 
