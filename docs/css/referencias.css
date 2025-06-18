@@ -8,6 +8,7 @@ h1.title{
 }
 .reference-item{
     cursor: default !important;
+    margin: 1.5rem 0;
 }
 .reference{
     text-indent:-2em;
