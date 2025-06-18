@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .directory-container{
-    width: 35%;
-    min-height: 20rem;
+    width: 25%;
+    min-height: 8rem;
     overflow: hidden;
     background-color: rgba(211, 210, 210, 0.125);
     display: flex;
@@ -37,11 +37,12 @@
 }
 .directory-contact{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(162, 162, 162);
 }
 
 @media (max-width:834px) {
     .directory-container{
-        width: 50%;
+        width: 45%;
     }
     .img-directory-container{
         width: 6rem;
@@ -49,5 +50,21 @@
     }
     .directory-name{
         font-size: 1rem;
+    }
+}
+
+@media (max-width:550px) {
+    .directory-subtitle, .directory-contact{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width:330px) {
+    .directory-name{
+        font-size: 0.8rem;
+    }
+    
+    .directory-subtitle, .directory-contact{
+        font-size: 0.5rem;
     }
 }
