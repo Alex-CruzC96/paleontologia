@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 .directory-container{
     width: 35%;
     min-height: 20rem;
@@ -23,4 +25,29 @@
 
 .directory-img{
     height: 100%;
+}
+
+.directory-name{
+    font-size: 1.5rem;
+    font-family: 'Outfit','Arial';
+}
+.directory-subtitle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(58, 58, 58);
+}
+.directory-contact{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:834px) {
+    .directory-container{
+        width: 50%;
+    }
+    .img-directory-container{
+        width: 6rem;
+        height: 6rem;
+    }
+    .directory-name{
+        font-size: 1rem;
+    }
 }
