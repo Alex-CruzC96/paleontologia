@@ -1,0 +1,16 @@
+h1.title{
+    font-size:2.5rem !important;
+}
+.references-list{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.reference-item{
+    cursor: default !important;
+}
+.reference{
+    text-indent:-2em;
+    padding-left: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
