@@ -69,6 +69,19 @@ li:hover .list-text{
     justify-content: flex-start;
     gap:15%;
 }
+/*Reemplazo al de arriba*/
+.main-container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15%;
+}
 .justify-self-center{
     justify-self: center !important;
 }
@@ -410,6 +423,9 @@ li:hover .list-text{
     #main-container{
         justify-content: center;
     }
+    .main-container{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 550px) {
@@ -419,6 +435,11 @@ li:hover .list-text{
     #main-container {
         background-position: center center;
         background-position: center 40%;
+        height: auto;
+        padding: 20px 0 !important;
+    }
+    .main-container{
+        background-position: center center;
         height: auto;
         padding: 20px 0 !important;
     }
