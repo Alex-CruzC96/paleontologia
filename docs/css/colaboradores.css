@@ -27,6 +27,10 @@
 .directory-img{
     height: 100%;
 }
+.directory-img.vertical{
+    width: 100%;
+    height: auto;
+}
 
 .directory-name{
     font-size: 1.5rem;
