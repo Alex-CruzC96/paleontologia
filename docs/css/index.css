@@ -410,9 +410,6 @@ li:hover .list-text{
         font-family: var(--secondary-font), 'Arial';
         color: var(--light-text-color);
     }
-    #main-container{
-        justify-content: center;
-    }
     .main-container{
         justify-content: center;
     }
@@ -421,12 +418,6 @@ li:hover .list-text{
 @media (max-width: 550px) {
     .icon{
         height: 8rem;
-    }
-    #main-container {
-        background-position: center center;
-        background-position: center 40%;
-        height: auto;
-        padding: 20px 0 !important;
     }
     .main-container{
         background-position: center center;
