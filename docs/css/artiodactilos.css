@@ -1,11 +1,6 @@
 #page-title{
     background-position: center 20%;
     background-image: url('../images/venado-cola-blanca.jpg');
-    /* height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    overflow: hidden; */
 }
 
 #container-image{
@@ -29,19 +24,7 @@
 }
 
 @media (max-width:550px) {
-    #page-title{
-        background-position: center center;
-        background-position: center 40%;
-        height: auto;
-        padding: 20px 0 !important;
-        padding-top: 0;
-    }
-
     #container-image{
         background-position: -120px 0;
-    }
-
-    .img-resize{
-        width: 50% !important;
     }
 }
