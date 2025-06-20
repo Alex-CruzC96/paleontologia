@@ -6,63 +6,10 @@
     box-sizing: border-box;
 }
 
-.title-roedor{
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-}
-
 /*Clases e identificadores*/
 #main-container2{
-    height: 100vh;
     background-image: url('../images/capibara2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center 20%;
-    overflow: hidden;
-}
-
-.box-roedor{
-    width: 45%;
-    text-align: center;
-}
-
-.list-text{
-    font-size: 1em;
-    color:white;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 20px;
-}
-
-li{
-    list-style: none;
-}
-li:hover{
-    cursor: pointer;
-}
-li:hover .list-text{
-    color: #505050;
-}
-
-.info{
-    text-align: justify;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.title{
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-}
-
-.subtitle{
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #505050;
 }
 
 .collapse-resize{
@@ -72,62 +19,4 @@ li:hover .list-text{
     display: flex;
     justify-content: center;
     flex: 0;
-}
-
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes opacityFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    
-}
-
-.dark{
-    animation: opacityFadeIn 1.6s ease-out forwards;
-    opacity: 0;
-}
-.animate-fade-in-up {
-    animation: fadeInUp 1s ease-out forwards;
-    opacity: 0;
-}
-
-
-
-@media (max-width:550px) {
-    #main-container2{
-        background-position: center center;
-        background-position: center 40%;
-        height: auto;
-        padding: 20px 0 !important;
-    }
-    .title-roedor{
-        font-size: 2rem;
-    }
-    .box-roedor{
-        width: 100%;
-        text-align: start;
-    }
-    .box-roedor .text{
-        font-size: 68%;
-    }
-
-    .list-text{
-        font-size: 50%;
-    }
-    .title-header{
-        font-size: 60%;
-    }
 }
