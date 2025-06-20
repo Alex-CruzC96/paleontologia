@@ -346,7 +346,7 @@ li:hover .list-text{
 
     /*Estilos del cabezal y menú de navegación en móviles*/
     .header,#header-special{
-        display: none ;
+        display: none !important;
     }
     #burbuja-movil{
         display:block;
