@@ -44,10 +44,11 @@ li:hover .list-text{
 /* Clases */
 #fixed-header{
     width: 100%;
-    height: 50px;
+    height: auto;
+    padding: 1.5rem 5%;
     background-color: black;
     position: fixed;
-    top:-50px;
+    top:-72px;
     transition: top 0.2s ease-in-out;
 }
 
@@ -353,7 +354,7 @@ li:hover .list-text{
     }
 
     /*Estilos del cabezal y menú de navegación en móviles*/
-    .header,#header-special{
+    .header,#header-special, #fixed-header{
         display: none !important;
     }
     #burbuja-movil{

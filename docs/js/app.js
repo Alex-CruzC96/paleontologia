@@ -21,7 +21,7 @@ window.addEventListener('scroll',()=>{
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     //Variable que verifica si el fixed header debe mostrarse
-    let isScrolled = scrollTop > 0;
+    let isScrolled = scrollTop > 20;
 
     if(isScrolled){
         //Programación del header fixed
@@ -29,11 +29,11 @@ window.addEventListener('scroll',()=>{
             fixedHeader.style.top = 0;
         }
         else if(scrollTop > lastScrollTop){
-            fixedHeader.style.top = -50 + 'px';
+            fixedHeader.style.top = -72 + 'px';
         }
     }
     else{
-        fixedHeader.style.top = -50 + 'px';
+        fixedHeader.style.top = -72 + 'px';
     }
     //Se actualizan los valores de la última posición del scroll
     lastScrollTop = scrollTop;
