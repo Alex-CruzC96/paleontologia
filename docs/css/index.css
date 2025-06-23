@@ -42,6 +42,14 @@ li:hover .list-text{
 }
 
 /* Clases */
+#fixed-header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top:-50px;
+    transition: top 0.2s ease-in-out;
+}
 
 .par{
     text-align: start;

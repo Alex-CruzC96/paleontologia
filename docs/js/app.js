@@ -10,11 +10,33 @@ const containers = document.querySelectorAll('.container,.container-fluid');
 const images = document.querySelectorAll('.prev-image');
 //Variable que contene al modal que se va desplegar
 const modal = document.querySelector('#big-screen');
+//Variable para el header fixed
+const fixedHeader = document.querySelector('#fixed-header');
 //Variable cambiante que ayuda al modal
 let isActive = false;
+//Variable que almacena la última posición de scroll
+let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
 window.addEventListener('scroll',()=>{
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    //Variable que verifica si el fixed header debe mostrarse
+    let isScrolled = scrollTop > 0;
+
+    if(isScrolled){
+        //Programación del header fixed
+        if(Math.abs(scrollTop - lastScrollTop) > 30 && scrollTop < lastScrollTop){
+            fixedHeader.style.top = 0;
+        }
+        else if(scrollTop > lastScrollTop){
+            fixedHeader.style.top = -50 + 'px';
+        }
+    }
+    else{
+        fixedHeader.style.top = -50 + 'px';
+    }
+    //Se actualizan los valores de la última posición del scroll
+    lastScrollTop = scrollTop;
     
     animateElementsFirst.forEach((element) => {
         const rect = element.getBoundingClientRect();
