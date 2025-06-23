@@ -50,6 +50,7 @@ li:hover .list-text{
     position: fixed;
     top:-72px;
     transition: top 0.2s ease-in-out;
+    z-index: 50;
 }
 
 .par{
