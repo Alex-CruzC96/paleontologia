@@ -164,7 +164,11 @@ li:hover .list-text{
     padding: 1rem 1.5rem;
 }
 .icon{
-    height: 15rem;
+    height: 10rem;
+}
+a .icon{
+    height: auto;
+    width: 15rem !important;
 }
 .iFrame{
     width: 1.8rem;
