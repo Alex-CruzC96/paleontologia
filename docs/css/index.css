@@ -235,6 +235,9 @@ a .icon{
     padding-top: 0;
     padding-bottom: 2rem;
 }
+.col-carousel{
+    padding: 0 1rem !important;
+}
 .image-col .blockquote-footer, .image-row .blockquote-footer{
     align-self: start;
     /* padding-left: 4rem; */
@@ -353,6 +356,9 @@ a .icon{
     .image-col .blockquote-footer, .image-row .blockquote-footer{
         /* padding-left: 2.5rem; */
         font-size: 0.9rem;
+    }
+    .col-carousel{
+        padding: 0  0.5rem !important;
     }
     .image-row{
         padding: 0 10% !important;
