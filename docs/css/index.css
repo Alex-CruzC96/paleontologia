@@ -163,6 +163,9 @@ li:hover .list-text{
     align-items: center;
     padding: 1rem 1.5rem;
 }
+#museo-footer-logo{
+    height: 10rem;
+}
 .icon{
     height: 10rem;
 }
