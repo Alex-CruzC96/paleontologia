@@ -163,6 +163,9 @@ li:hover .list-text{
     align-items: center;
     padding: 1rem 1.5rem;
 }
+#museo-footer-logo{
+    height: 10rem;
+}
 .icon{
     height: 10rem;
 }
@@ -173,12 +176,17 @@ a .icon{
 .iFrame{
     width: 1.8rem;
     height: 1.8rem;
+}
+.invert{
     filter: invert(100%);
 }
 .iFrame:hover{
     transform: scale(1.15);
-    filter: invert(27%) sepia(99%) saturate(7473%) hue-rotate(203deg) brightness(97%) contrast(101%);
     transition: transform ease-in 0.2s;
+}
+.iFrame.invert:hover{
+    filter: invert(27%) sepia(99%) saturate(7473%) hue-rotate(203deg) brightness(97%) contrast(101%);
+
 }
 .footer-center-col{
     display: flex;
