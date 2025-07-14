@@ -2,29 +2,3 @@
     background-position: center 20%;
     background-image: url('../images/venado-cola-blanca.jpg');
 }
-
-#container-image{
-    background-image: url('../images/venado2.jpg');
-    background-position: center 0;
-    height: 28rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    padding-right: 20rem;
-}
-
-@media (max-width: 835px) {
-    #container-image{
-        align-items: center;
-        padding: 0;
-    }
-}
-
-@media (max-width:550px) {
-    #container-image{
-        background-position: -120px 0;
-    }
-}
