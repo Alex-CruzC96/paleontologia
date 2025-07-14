@@ -266,7 +266,9 @@ a .icon{
     justify-content: center;
     padding: 0 25% !important;
 }
-
+.low-pad-x{
+    padding: 0 10% !important;
+}
 /*Clase para desenfocado prueba*/
 .blur-container{
     filter: blur(1px) !important;
