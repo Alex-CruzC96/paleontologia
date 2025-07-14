@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .directory-container{
-    width: 45%;
+    width: 30%;
     min-height: 8rem;
     overflow: hidden;
     background-color: rgba(211, 210, 210, 0.125);
@@ -68,9 +68,15 @@
         font-size: 1.25rem;
     }
     .directory-subtitle, .directory-contact{
-        font-size: 1.22rem;
+        font-size: 1.18rem;
     }
     
+}
+
+@media (max-width:768px) {
+    .directory-subtitle, .directory-contact{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:550px) {
