@@ -13,6 +13,7 @@ const markerLaConcordia = L.marker([16.116043,-92.688880]).addTo(map);
 const markerSocoltenango = L.marker([16.242937,-92.350305]).addTo(map);
 const markerSuchiapa = L.marker([16.623211,-93.102707]).addTo(map);
 const markerComitan = L.marker([16.252302,-92.135596]).addTo(map);
+const markerIxtapa = L.marker([16.803190,-92.904648]).addTo(map);
 
 //Circulo
 // let circle = L.circle([16.754118,-93.137785],{
@@ -30,3 +31,4 @@ markerLaConcordia.bindPopup("<b>La concordia</b><br>Aquí hay fósiles.");
 markerSocoltenango.bindPopup("<b>Socoltenango</b><br>Aquí hay fósiles.");
 markerSuchiapa.bindPopup("<b>Suchiapa</b><br>Aquí hay fósiles.");
 markerComitan.bindPopup("<b>Comitán</b><br>Aquí hay fósiles.");
+markerIxtapa.bindPopup("<b>Ixtapa</b><br>Aquí hay fósiles.");
