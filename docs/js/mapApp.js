@@ -1,4 +1,4 @@
-const map = L.map('map').setView([16.53, -92.45], 8);
+const map = L.map('map').setView([16.5562, -92.8107], 8);
 //Botones que activan los marcadores por especie
 const buttons = document.querySelectorAll('.specie_button');
 
