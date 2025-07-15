@@ -258,6 +258,29 @@ a .icon{
     display: none;
 }
 
+/*Diseño de los botones del mapa*/
+.map-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    background-color: var(--glas-box-background);
+    box-shadow: var(--shadow-effect);
+    user-select: none;
+}
+.map-button:hover{
+    background-color: var(--glass-box-hover-background);
+}
+.map-button-image{
+    width: 70%;
+}
+.map-button-image:hover{
+    transform: scale(1.1);
+    transition: transform ease-in 0.2s;
+}
+
 /*Diseño de imágenes que estén en una columna sola*/
 .image-row{
     display: flex;
