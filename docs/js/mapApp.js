@@ -50,7 +50,6 @@ const markerMap = {
 }
 
 //Botones de especies evento de click
-
 buttons.forEach(button => {
     button.addEventListener('click',()=>{
         let markerName = button.dataset.markers;
