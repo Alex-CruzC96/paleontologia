@@ -40,13 +40,39 @@ const markersCamello = [
     {'location':[16.185110,-93.268307],'town_name':'Villa Corzo'}
 ]
 
+//Marcadores de roedores
+const markersCapibara = [
+    {'location':[16.118212,-92.694773],'town_name':'La Concordia'}
+]
+
+const markersReithrodontomys = [
+    {'location':[16.541105,-92.896329],'town_name':'20 de Noviembre'}
+]
+
+const markersPeromyscus = [
+    {'location':[16.555542,-92.802058],'town_name':'Acala'}
+]
+
+const markersSigmodon = [
+    {'location':[16.683429,-93.729661],'town_name':'Cintalapa'}
+]
+
+const markersLyomis = [
+    {'location':[16.762442,-93.375463],'town_name':'Ocozocoautla de Espinosa'}
+]
+
 //Mapeo de los marcadores
 const markerMap = {
     generalMarkers,
     markersVenados,
     markersPecari,
     markersBisonte,
-    markersCamello
+    markersCamello,
+    markersCapibara,
+    markersReithrodontomys,
+    markersPeromyscus,
+    markersSigmodon,
+    markersLyomis
 }
 
 //Botones de especies evento de click
