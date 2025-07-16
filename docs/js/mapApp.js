@@ -73,6 +73,10 @@ const markersEquusConversidens = [
     {'location':[16.185110,-93.268307],'town_name':'Villa Corzo'}
 ]
 
+const markersHaringtonhippus = [
+    {'location':[16.800313,-92.898876],'town_name':'Ixtapa'}
+]
+
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -90,7 +94,8 @@ const markerMap = {
     markersSigmodon,
     markersLyomis,
     markersEquusMexicanus,
-    markersEquusConversidens
+    markersEquusConversidens,
+    markersHaringtonhippus
 }
 
 //Botones de especies evento de click
