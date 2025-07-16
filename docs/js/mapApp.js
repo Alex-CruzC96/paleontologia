@@ -87,11 +87,21 @@ buttons.forEach(button => {
 //Funciones
 function addMarkersToMap(markers){
     clearMarks(); // Limpia antes de agregar nuevos
+
+    //Agrega los marcadores a la capa de marcadores en el mapa
     markers.forEach(marker => {
         L.marker(marker.location).addTo(markersLayer).bindPopup(`<b>${marker.town_name}</b>`);
+    })
+    //Una vez agregados los marcadores  se les asigna un evento de click
+    markersLayer.eachLayer((layer) => {
+        layer.on('click',zoomToFeature);
     })
 }
 
 function clearMarks(){
     markersLayer.clearLayers();
+}
+
+function zoomToFeature(e){
+    map.setView(e.target.getLatLng(),10);
 }
