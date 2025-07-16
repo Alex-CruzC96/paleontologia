@@ -81,6 +81,7 @@ buttons.forEach(button => {
         let markerName = button.dataset.markers;
         let markers = markerMap[markerName];
         addMarkersToMap(markers);
+        resetMapView();
     })
 });
 
@@ -104,4 +105,8 @@ function clearMarks(){
 
 function zoomToFeature(e){
     map.setView(e.target.getLatLng(),10);
+}
+
+function resetMapView(){
+    map.setView([16.5562, -92.8107], 8);
 }
