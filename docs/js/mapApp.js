@@ -105,7 +105,8 @@ const markerMap = {
     markersEquusMexicanus,
     markersEquusConversidens,
     markersHaringtonhippus,
-    markersMammuthus
+    markersMammuthus,
+    markersGonfoterio
 }
 
 //Botones de especies evento de click
