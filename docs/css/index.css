@@ -327,6 +327,20 @@ a .icon{
     background-color: black;
 }
 
+/*Diseños de información en el mapa*/
+.info-map{
+    padding:6px 8px;
+    font: 12px/14px var(--secondary-font), 'Arial';
+    background:rgba(255,255,255,0.8);
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    border-radius:5px;
+}
+.info-map h4{
+    margin: 0 0 5px;
+    color: #777;
+    font-size: 1rem;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

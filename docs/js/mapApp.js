@@ -11,6 +11,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //Capa de marcadores dinámicos
 const markersLayer = L.layerGroup().addTo(map);
 
+//Recuadro de información sobre capas
+const info = L.control({position:'topright'});
+
 //Marcadores generales
 const generalMarkers = [
     {'location':[16.708171,-93.016658],'town_name':'Chiapa de Corzo'},
@@ -84,6 +87,20 @@ buttons.forEach(button => {
         resetMapView();
     })
 });
+
+//Control de la información sobre capas
+info.onAdd = function(map){
+    this._div = L.DomUtil.create('div', 'info-map');
+    this.update();
+    return this._div;
+}
+
+info.update = function(props){
+    this._div.innerHTML = '<h4>Fósiles de </h4>' + (props ?
+        '<b>' : 'Seleccione una especie'
+    )
+}
+info.addTo(map);
 
 //Funciones
 function addMarkersToMap(markers){
