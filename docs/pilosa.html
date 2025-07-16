@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/pilosa.css"/>
-    <link rel="icon" href="./icons/especies/Nothrotheriops_2020.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/pilosa.css" />
+    <link rel="icon" href="./icons/especies/Nothrotheriops_2020.webp" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
 </head>
+
 <body>
     <!--Menú móvil-->
     <div id="burbuja-movil" class="">
@@ -101,16 +110,16 @@
         <div class="row">
             <div class="col">
                 <p class="info">
-                    Los pilosos son un orden de mamíferos placentarios que incluye 
+                    Los pilosos son un orden de mamíferos placentarios que incluye
                     los osos hormigueros, los megaterios, los tamandúas y los perezosos.
-                    En la actualidad existen únicamente en el continente americano. El 
-                    origen del orden se remonta a principios del Terciario (hace alrededor 
-                    de 60 millones de años, poco tiempo después de la extinción de los 
+                    En la actualidad existen únicamente en el continente americano. El
+                    origen del orden se remonta a principios del Terciario (hace alrededor
+                    de 60 millones de años, poco tiempo después de la extinción de los
                     dinosaurios).
                     Hasta hace poco se consideraban un suborden del orden <i>Xenarthra</i>
-                    que en la actualidad ha sido elevado al rango de superorden. Están 
-                    emparentados con los armadillos, que hoy se consideran un orden dentro 
-                    de los <i>xenarthros</i>, aunque los pilosos modernos están muy especializados 
+                    que en la actualidad ha sido elevado al rango de superorden. Están
+                    emparentados con los armadillos, que hoy se consideran un orden dentro
+                    de los <i>xenarthros</i>, aunque los pilosos modernos están muy especializados
                     y superficialmente se parecen poco a los armadillos.
                 </p>
             </div>
@@ -118,18 +127,18 @@
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
                 <p class="info">
-                    Los orígenes biogeográficos de la Pilosa aún no están claros, pero 
-                    se pueden rastrear hasta el Paleógeno temprano (hace unos 60 
-                    millones de años, poco después del final de la Era Mesozoica). La 
-                    presencia de estos animales en Centroamérica y su anterior 
-                    presencia en Norteamérica es el resultado del Gran Intercambio 
+                    Los orígenes biogeográficos de la Pilosa aún no están claros, pero
+                    se pueden rastrear hasta el Paleógeno temprano (hace unos 60
+                    millones de años, poco después del final de la Era Mesozoica). La
+                    presencia de estos animales en Centroamérica y su anterior
+                    presencia en Norteamérica es el resultado del Gran Intercambio
                     Americano. También hubo antiguamente perezosos en las Antillas,
-                    a las que llegaron desde Sudamérica mediante alguna combinación 
-                    de balsas o flotando con las corrientes predominantes. 
+                    a las que llegaron desde Sudamérica mediante alguna combinación
+                    de balsas o flotando con las corrientes predominantes.
                 </p>
             </div>
             <div class="col image-col">
-                <img class="img-fluid rounded shadow prev-image" src="./images/gran_intercambio_americano.png"/>
+                <img class="img-fluid rounded shadow prev-image" src="./images/gran_intercambio_americano.png" />
                 <figcaption class="blockquote-footer pt-4">
                     Imagen extraida de: <cite title="Source Title">Internet</cite>
                 </figcaption>
@@ -140,16 +149,16 @@
                 <p class="info">
                     ¿Qué características unen a los osos hormigueros y los perezosos
                     en un mismo grupo? Primeramente, se trata de sus dientes
-                    primitivos, que no tienen raíces ni esmalte y crecen a lo largo 
-                    de su vida. La antiguedad y el primitivismo de los dientes 
-                    incompletos se demuestra también por su reducido, en comparación 
+                    primitivos, que no tienen raíces ni esmalte y crecen a lo largo
+                    de su vida. La antiguedad y el primitivismo de los dientes
+                    incompletos se demuestra también por su reducido, en comparación
                     a otros animales, metabolismo y depedencia de su temperatura
-                    corporal de la temperatura ambiente, y por sus diminutos cerebros 
+                    corporal de la temperatura ambiente, y por sus diminutos cerebros
                     que casi no tienen giros.
-                    Todos los pilosos están muy extendidas en América del Sur, Central 
+                    Todos los pilosos están muy extendidas en América del Sur, Central
                     y Norte. Por lo demás, varían enormemente, sus colas son largas o
-                    muy cortas; sus estómagos son simples o complicados; su piel está 
-                    cubierta de pelo o de placas córneas; sus extremidades tienen de 2 
+                    muy cortas; sus estómagos son simples o complicados; su piel está
+                    cubierta de pelo o de placas córneas; sus extremidades tienen de 2
                     a 5 dedos, etc.
                 </p>
             </div>
@@ -167,17 +176,17 @@
                 <p class="info">
                     <i>Eremotherium laurillardi</i> es una especie extinta de perezosos terrestres
                     gigantes (megatéridos) que vivió durante el Pleistoceno tardío en América.
-                    En posición cuadrúpeda, rebasa los 2m de altura al hombre y apoyado en sus 
-                    patas posteriores tuvo un alcance vertical que rondaba los 5m, este gigantesco 
-                    animal que con frecuencia superaba las 4 toneladas de peso, tenía un volumen 
+                    En posición cuadrúpeda, rebasa los 2m de altura al hombre y apoyado en sus
+                    patas posteriores tuvo un alcance vertical que rondaba los 5m, este gigantesco
+                    animal que con frecuencia superaba las 4 toneladas de peso, tenía un volumen
                     similar al de los elefantes actuales.
-                    Sus restos se han hallado desde Brasil hasta Estados Unidos, por lo que fue la 
+                    Sus restos se han hallado desde Brasil hasta Estados Unidos, por lo que fue la
                     especie de megatérido más ampliamente distribuida. Debido a esto es llamado "El
                     perezoso terrestre panamericano".
                 </p>
             </div>
             <div class="col image-col animation-first">
-                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Eremotherium_laurillardi.png"/>
+                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Eremotherium_laurillardi.png" />
                 <figcaption class="blockquote-footer pt-4">
                     Ilustración creada por: <cite title="Source Title">Joaquín Eng</cite>
                 </figcaption>
@@ -186,7 +195,7 @@
 
         <div class="row mt-4 row-cols-1 row-cols-md-2">
             <div class="col image-col animation-second order-2 order-md-1">
-                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Paramylodon_harlani_2020.png"/>
+                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Paramylodon_harlani_2020.png" />
                 <figcaption class="blockquote-footer pt-4">
                     Ilustración creada por: <cite title="Source Title">Joaquín Eng</cite>
                 </figcaption>
@@ -194,18 +203,18 @@
             <div class="col order-1 order-md-2">
                 <h2 class="subtitle">Perezoso <i>Paramylodon harlani</i></h2>
                 <p class="info">
-                    <i>Paramylodon</i> es un género extinto de perezoso terrestre de la familia 
-                    Mylodontidae endémico de Norteamérica durante las épocas del Plioceno y el 
-                    Pleistoceno, viviendo desde hace unos 4.6 millones de años hasta hace unos 
+                    <i>Paramylodon</i> es un género extinto de perezoso terrestre de la familia
+                    Mylodontidae endémico de Norteamérica durante las épocas del Plioceno y el
+                    Pleistoceno, viviendo desde hace unos 4.6 millones de años hasta hace unos
                     12,000 años.
-                    Es conocido de depósitos desde América del Norte hasta tan al sur como 
-                    Guatemala y también México aunque es frecuentemente confundido con su primo 
+                    Es conocido de depósitos desde América del Norte hasta tan al sur como
+                    Guatemala y también México aunque es frecuentemente confundido con su primo
                     <i>Glossotherium</i>. Actualmente sólo se reconoce a una especie, <i>P. harlani</i>,
                     que es llamada a veces el perezoso de Harlan en honor del paleontólogo estadounidense
                     Richard Harlan quien fue el primero en descubrir y describir una mandíbula
-                    inferior del animal en 1835. <i>Paramylodon</i> exhibe la interesante característica 
-                    de poseer pequeños osteodermos, huesos insertos en la piel, que presumiblemente 
-                    añadirían alguna protección al animal. Esta característica es también compartida 
+                    inferior del animal en 1835. <i>Paramylodon</i> exhibe la interesante característica
+                    de poseer pequeños osteodermos, huesos insertos en la piel, que presumiblemente
+                    añadirían alguna protección al animal. Esta característica es también compartida
                     con el <i>Mylodon</i> de Suramérica.
                 </p>
             </div>
@@ -220,13 +229,40 @@
                 </p>
             </div>
             <div class="col image-col animation-first">
-                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Nothrotheriops_2020.webp"/>
+                <img class="img-fluid rounded shadow prev-image" src="./icons/especies/Nothrotheriops_2020.webp" />
                 <figcaption class="blockquote-footer pt-4">
                     Ilustración creada por: <cite title="Source Title">Joaquín Eng</cite>
                 </figcaption>
             </div>
-        </div>  
+        </div>
         <!--Fin especies-->
+
+        <!--Mapa de especies-->
+        <div class="row text-center mt-3">
+            <div class="col">
+                <h2 class="subtitle">Ubicación de fósiles encontrados por especie</h2>
+            </div>
+        </div>
+        <div class="row low-pad-x">
+            <div id="map" style="height: 20rem; z-index:5;"></div>
+        </div>
+        <div class="row my-3">
+            <div class="col d-flex justify-content-center gap-2">
+                <button class="map-button specie_button" data-markers="markersEremotherium" data-specie="Perezoso <i>Eremotherium laurillardi</i>">
+                    <img src="./icons/btn_icon/eremotherium_btn_icon.webp"
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersParamylodon" data-specie="Perezoso <i>Paramylodon harlani</i>">
+                    <img src="./icons/btn_icon/paramylodon_btn_icon.webp" 
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersNothrotheriops" data-specie="Perezoso de Shasta <i>Nothrotheriops</i>">
+                    <img src="./icons/btn_icon/nothrotheriops_btn_icon.webp" 
+                    class="img-fluid map-button-image"/>
+                </button>
+            </div>
+        </div>
+        <!--Fin del mapa de especies-->
     </main>
     <!--Find del Main Content-->
 
@@ -238,12 +274,13 @@
                     <img class="img img-fluid" id="museo-footer-logo" src="./icons/logo-museo-corregido.png">
                 </a>
                 <a href="https://www.semahn.chiapas.gob.mx/portal/" target="_blank">
-                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png"/>
+                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png" />
                 </a>
             </div>
             <div class="col footer-center-col py-5">
                 <div class="link-row d-flex gap-2">
-                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank" class="icon-link">
+                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank"
+                        class="icon-link">
                         <img src="./icons/facebook-brands.svg" class="iFrame invert" />
                     </a>
                     <a href="https://sketchfab.com/MuseoPaleontologia" target="_blank" class="icon-link">
@@ -273,7 +310,10 @@
             </div>
             <div class="col footer-center-col py-3">
                 <h5 class="footer-subtitle">Ubicación</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.0865336109491!2d-93.10655939045783!3d16.75944616162327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd89ad68b7d8d%3A0xc76178acbd70ba82!2sMuseo%20de%20Paleontolog%C3%ADa%20%22Eliseo%20Palacios%20Aguilera%22!5e0!3m2!1ses!2smx!4v1750087950478!5m2!1ses!2smx" width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.0865336109491!2d-93.10655939045783!3d16.75944616162327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd89ad68b7d8d%3A0xc76178acbd70ba82!2sMuseo%20de%20Paleontolog%C3%ADa%20%22Eliseo%20Palacios%20Aguilera%22!5e0!3m2!1ses!2smx!4v1750087950478!5m2!1ses!2smx"
+                    width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="row footer-sub-footer">
@@ -292,5 +332,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/mapApp.js"></script>
 </body>
+
 </html>

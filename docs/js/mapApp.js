@@ -95,6 +95,18 @@ const markersArmadillo = [
     {'location':[16.148799,-94.092977],'town_name':'La gloria'}
 ]
 
+//Marcadores de Pilosos
+const markersEremotherium = [
+    {'location':[16.239426,-92.129955],'town_name':'Comitán de Domínguez'}
+]
+
+const markersParamylodon = [
+    {'location':[16.340539,-92.559977],'town_name':'Venustiano Carranza'}
+]
+
+const markersNothrotheriops = [
+    {'location':[16.541487,-92.483292],'town_name':'Teopisca'}
+]
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -117,7 +129,10 @@ const markerMap = {
     markersMammuthus,
     markersGonfoterio,
     markersGliptodonte,
-    markersArmadillo
+    markersArmadillo,
+    markersEremotherium,
+    markersParamylodon,
+    markersNothrotheriops
 }
 
 //Botones de especies evento de click
