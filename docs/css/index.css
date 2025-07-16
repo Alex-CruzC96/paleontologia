@@ -334,11 +334,19 @@ a .icon{
     background:rgba(255,255,255,0.8);
     box-shadow:0 0 15px rgba(0,0,0,0.2);
     border-radius:5px;
+    max-width: 10rem;
 }
 .info-map h4{
     margin: 0 0 5px;
     color: #777;
     font-size: 1rem;
+    text-align: start !important;
+}
+.info-map p{
+    margin: 0;
+    color: #333;
+    font-size: 0.9rem;
+    text-align: start !important;
 }
 
 @keyframes fadeInUp {

@@ -98,7 +98,7 @@ info.onAdd = function(map){
 
 info.update = function(specie){
     this._div.innerHTML = '<h4>Ubicación de fósiles</h4>' 
-    + (specie ? (specie === 'generales' ? `Ubicación de fósiles ${specie} encontrados`:`Ubicación de fósiles de ${specie} encontrados`)
+    + (specie ? (specie === 'generales' ? `<p>Ubicación de fósiles ${specie} encontrados</p>`:`<p>Ubicación de fósiles de ${specie} encontrados</p>`)
     :'Seleccione una especie');
 }
 info.addTo(map);
@@ -126,7 +126,7 @@ function zoomToFeature(e){
 }
 
 function resetMapView(){
-    map.setView([16.5562, -92.8107], 8);
+    map.setView([16.5562, -92.8107], 7);
 }
 
 function updateInfo(specie){
