@@ -97,9 +97,9 @@ info.onAdd = function(map){
 }
 
 info.update = function(specie){
-    this._div.innerHTML = '<h4>Ubicación de fósiles</h4>' + (specie ?
-        '<b>Ubicación de fósiles de ' + specie + ' encontrados</b>' : 'Seleccione una especie'
-    )
+    this._div.innerHTML = '<h4>Ubicación de fósiles</h4>' 
+    + (specie ? (specie === 'generales' ? `Ubicación de fósiles ${specie} encontrados`:`Ubicación de fósiles de ${specie} encontrados`)
+    :'Seleccione una especie');
 }
 info.addTo(map);
 
