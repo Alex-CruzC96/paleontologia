@@ -69,7 +69,15 @@ const markersEquusMexicanus = [
     {'location':[16.235060,-93.266967],'town_name':'Villa Flores'}
 ]
 
+const markersEquusConversidens = [
+    {'location':[16.185110,-93.268307],'town_name':'Villa Corzo'}
+]
+
 //Mapeo de los marcadores
+/**
+ * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
+ * SEA POSIBLE ACCEDER A ELLOS.
+ */
 const markerMap = {
     generalMarkers,
     markersVenados,
@@ -80,7 +88,9 @@ const markerMap = {
     markersReithrodontomys,
     markersPeromyscus,
     markersSigmodon,
-    markersLyomis
+    markersLyomis,
+    markersEquusMexicanus,
+    markersEquusConversidens
 }
 
 //Botones de especies evento de click
