@@ -86,6 +86,11 @@ const markersGonfoterio = [
     {'location':[16.116149,-92.688842],'town_name':'La concordia'}
 ]
 
+//Marcadores de cingulados
+const markersGliptodonte = [
+    {'location':[15.764827,-92.264891],'town_name':'Chicomuselo'}
+]
+
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -106,7 +111,8 @@ const markerMap = {
     markersEquusConversidens,
     markersHaringtonhippus,
     markersMammuthus,
-    markersGonfoterio
+    markersGonfoterio,
+    markersGliptodonte
 }
 
 //Botones de especies evento de click
