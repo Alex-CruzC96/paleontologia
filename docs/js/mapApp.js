@@ -64,6 +64,11 @@ const markersLyomis = [
     {'location':[16.762442,-93.375463],'town_name':'Ocozocoautla de Espinosa'}
 ]
 
+//Marcadores de perisodáctilos
+const markersEquusMexicanus = [
+    {'location':[16.235060,-93.266967],'town_name':'Villa Flores'}
+]
+
 //Mapeo de los marcadores
 const markerMap = {
     generalMarkers,
