@@ -77,6 +77,15 @@ const markersHaringtonhippus = [
     {'location':[16.800313,-92.898876],'town_name':'Ixtapa'}
 ]
 
+//Marcadores de proboscídeos
+const markersMammuthus = [
+    {'location':[16.703403,-93.003683],'town_name':'Chiapa de Corzo'}
+]
+
+const markersGonfoterio = [
+    {'location':[16.116149,-92.688842],'town_name':'La concordia'}
+]
+
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -95,7 +104,8 @@ const markerMap = {
     markersLyomis,
     markersEquusMexicanus,
     markersEquusConversidens,
-    markersHaringtonhippus
+    markersHaringtonhippus,
+    markersMammuthus
 }
 
 //Botones de especies evento de click
