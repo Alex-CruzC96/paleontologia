@@ -85,6 +85,7 @@ buttons.forEach(button => {
         let markers = markerMap[markerName];
         addMarkersToMap(markers);
         resetMapView();
+        updateInfo(button.dataset.specie);
     })
 });
 
@@ -95,9 +96,9 @@ info.onAdd = function(map){
     return this._div;
 }
 
-info.update = function(props){
-    this._div.innerHTML = '<h4>Fósiles de </h4>' + (props ?
-        '<b>' : 'Seleccione una especie'
+info.update = function(specie){
+    this._div.innerHTML = '<h4>Ubicación de fósiles</h4>' + (specie ?
+        '<b>Ubicación de fósiles de ' + specie + ' encontrados</b>' : 'Seleccione una especie'
     )
 }
 info.addTo(map);
@@ -126,4 +127,8 @@ function zoomToFeature(e){
 
 function resetMapView(){
     map.setView([16.5562, -92.8107], 8);
+}
+
+function updateInfo(specie){
+    info.update(specie)
 }
