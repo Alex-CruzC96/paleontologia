@@ -91,6 +91,10 @@ const markersGliptodonte = [
     {'location':[15.764827,-92.264891],'town_name':'Chicomuselo'}
 ]
 
+const markersArmadillo = [
+    {'location':[16.148799,-94.092977],'town_name':'La gloria'}
+]
+
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -112,7 +116,8 @@ const markerMap = {
     markersHaringtonhippus,
     markersMammuthus,
     markersGonfoterio,
-    markersGliptodonte
+    markersGliptodonte,
+    markersArmadillo
 }
 
 //Botones de especies evento de click
