@@ -107,6 +107,15 @@ const markersParamylodon = [
 const markersNothrotheriops = [
     {'location':[16.541487,-92.483292],'town_name':'Teopisca'}
 ]
+
+//Marcadores de carnivoros
+const markersPantheraAtrox = [
+    {'location':[16.817763,-92.508010],'town_name':'Tenejapa'}
+]
+
+const markersSmilodon = [
+    {'location':[16.379159,-93.861013],'town_name':'Tierra y Libertad'}
+]
 //Mapeo de los marcadores
 /**
  * ES NECESARIO MAPEAR LOS MARCADORES PARA QUE
@@ -132,7 +141,9 @@ const markerMap = {
     markersArmadillo,
     markersEremotherium,
     markersParamylodon,
-    markersNothrotheriops
+    markersNothrotheriops,
+    markersPantheraAtrox,
+    markersSmilodon
 }
 
 //Botones de especies evento de click
