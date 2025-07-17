@@ -12,7 +12,7 @@
     <link rel="icon" href="./icons/especies/Neochoerus_aesopi.webp" type="image/x-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -108,13 +108,13 @@
         <div class="row text-center">
             <div class="col">
                 <p class="info">
-                    De entre los mamíferos modernos, los más diversos son los roedores, un grupo de criaturas que
-                    comparten como rasgo común la presencia de un único par de dientes incisivos que nunca dejan de
-                    crecer y que utilizan para roer, de ahí el nombre roedor. Hoy en día existen cerca de 2,200 especies
-                    de roedores y la mayoría son pequeños, el más diminuto es Micromys minutus (el ratón espiguero) y
-                    mide 50 mm de longitud y pesa unos 7 gr, mientras que el más grande es <i>Hydrochoerus
-                        hydrochaeris</i>
-                    (el capibara) que mide hasta 1.3 m y pesa hasta 70 Kg.
+                    El orden Rodentia es el grupo de micromamíferos más diverso, con cerca del 44% de todas las especies
+                    de mamíferos. En México existen unas 240 especies de roedores, 120 de ellas endémicas. Son altamente
+                    adaptables, presentes en casi todos los ecosistemas, y regiones del mundo. Los roedores han
+                    desarrollado diferentes adaptaciones morfológicas, pero en general, comparten como característica
+                    única, un par de incisivos superiores e inferiores, que crecen durante toda su vida. La ausencia de
+                    otros incisivos y caninos resulta en un espacio entre incisivos y molares, llamado diastema, donde
+                    retienen el alimento antes de masticarlo de nuevo.
                 </p>
             </div>
         </div>
@@ -128,12 +128,12 @@
             </div>
             <div class="col animation-first">
                 <p class="info">
-                    El origen de los roedores se remonta al Paleoceno, entre hace unos 61.7 y 62.4 Ma, sin embargo estos
-                    primeros roedores no dieron origen a los modernos, pues estos últimos surgieron a partir de una
-                    radiación posterior que data del Eoceno temprano, de hace unos 58 millones de años. Los primeros
-                    roedores 'modernos' eran casi con seguridad arborícolas y están representados por los géneros
-                    Microparamys, Cocomys, Paramys, entre otros. Todos estos animales eran similares a los roedores
-                    actuales y quizá compartían muchos de sus hábitos.
+                    En el registro fósil, los roedores aparecen en el Paleoceno en Asia, Europa y América del Norte.
+                    Durante el Eoceno, los roedores comenzaron a colonizar nuevos hábitats, para el Mioceno, ya estaban
+                    presentes en todos los continentes, excepto la Antártida. En Chiapas, los fósiles de roedores datan
+                    del Pleistoceno Superior. A la fecha se ha determinado cuatro especies de talla pequeña,
+                    Reytrodonthomys sp., Peromyscus sp., Sigmodon hispidus y Lyomis sp., y una especie de talla grande
+                    Neochoerus aesopi.
                 </p>
             </div>
         </div>
@@ -291,22 +291,21 @@
         <div class="row mt-3">
             <div class="col d-flex justify-content-center gap-2">
                 <button class="map-button specie_button" data-markers="markersCapibara" data-specie="Capibara">
-                    <img src="./icons/btn_icon/capibara_btn_icon.webp"
-                    class="img-fluid map-button-image"/>
+                    <img src="./icons/btn_icon/capibara_btn_icon.webp" class="img-fluid map-button-image" />
                 </button>
-                <button class="map-button specie_button" data-markers="markersReithrodontomys" data-specie="<i>Reithrodontomys</i>">
-                    <img src="./icons/btn_icon/ratones_btn_icon.png" 
-                    class="img-fluid map-button-image"/>
+                <button class="map-button specie_button" data-markers="markersReithrodontomys"
+                    data-specie="<i>Reithrodontomys</i>">
+                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image" />
                 </button>
-                <button class="map-button specie_button" data-markers="markersPeromyscus" data-specie="<i>Peromyscus</i>">
-                    <img src="./icons/btn_icon/ratones_btn_icon.png"
-                    class="img-fluid map-button-image"/>
+                <button class="map-button specie_button" data-markers="markersPeromyscus"
+                    data-specie="<i>Peromyscus</i>">
+                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image" />
                 </button>
                 <button class="map-button specie_button" data-markers="markersSigmodon" data-specie="<i>Sigmodon</i>">
-                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image"/>
+                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image" />
                 </button>
                 <button class="map-button specie_button" data-markers="markersLyomis" data-specie="<i>Lyomis</i>">
-                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image"/>
+                    <img src="./icons/btn_icon/ratones_btn_icon.png" class="img-fluid map-button-image" />
                 </button>
             </div>
         </div>
@@ -321,12 +320,13 @@
                     <img class="img img-fluid" id="museo-footer-logo" src="./icons/logo-museo-corregido.png">
                 </a>
                 <a href="https://www.semahn.chiapas.gob.mx/portal/" target="_blank">
-                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png"/>
+                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png" />
                 </a>
             </div>
             <div class="col footer-center-col py-5">
                 <div class="link-row d-flex gap-2">
-                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank" class="icon-link">
+                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank"
+                        class="icon-link">
                         <img src="./icons/facebook-brands.svg" class="iFrame invert" />
                     </a>
                     <a href="https://sketchfab.com/MuseoPaleontologia" target="_blank" class="icon-link">
