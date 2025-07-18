@@ -348,10 +348,6 @@ a .icon{
     font-size: 0.9rem;
     text-align: start !important;
 }
-/*Diseños de la animación GIF*/
-#gif{
-    width: 50rem;
-}
 
 @keyframes fadeInUp {
     from {
