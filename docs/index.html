@@ -265,7 +265,7 @@
 
         <div class="row">
             <div class="col text-center">
-                <h2 class="title">Geografía</h2>
+                <h2 class="title">Paleo geografía</h2>
                 <p class="texto">
                     Las bajas temperaturas ocurridas durante los intervalos glaciares, ocasionaron que gran parte del
                     agua de mar se congelara, bajando con ello el nivel de los océanos. El descenso del nivel del mar
@@ -292,14 +292,24 @@
                 </p>
             </div>
         </div>
+        <!--Animación GIF-->
+        <div class="row">
+            <div class="col image-row">
+                <img class="img-fluid rounded shadow" src="./images/cambios_geograficos.gif"/>
+                <figcaption class="blockquote-footer pt-4">
+                    Christopher Scotese <cite title="Source Title">Tectónica de placas, paleogeografía y glaciaciones</cite>
+                </figcaption>
+            </div>
+        </div>
+        <!--Fin de animación GIF-->
 
         <!--Zona de vegetación-->
-        <div class="row text-center">
+        <div class="row text-center mt-5">
             <div class="col">
                 <h2 class="title">Vegetación</h2>
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-2">
             <div class="col">
                 <p class="texto">
                     Durante el Pleistoceno, la vegetación en América del Norte varió considerablemente debido a las
@@ -340,9 +350,11 @@
                 </p>
             </div>
             <div class="col image-col">
-                <img class="img-fluid prev-image rounded shadow" src="./images/imagen-vegetacion-ia.jpeg"/>
+                <img class="img-fluid prev-image rounded shadow" src="./images/imagen-vegetacion-ia.jpeg" />
                 <figcaption class="blockquote-footer pt-4">
-                    Imagen generada por <cite title="Source Title">Inteligencia artificial</cite>
+                    Un león americano, <i>Panthera atrox</i>, descansa mientras una manada de mamuts de las praderas,
+                    <i>Mammuthus columbi</i>, se mueven en busca de alimento <cite title="Source Title">Imagen generada
+                        por Inteligencia artificial</cite>
                 </figcaption>
             </div>
         </div>
@@ -419,7 +431,13 @@
             </div>
         </div>
         <div class="row mt-4 image-row low-pad-x">
-            <div id="map" style="height: 20rem;"></div>
+            <div id="map" style="height: 20rem; z-index:5;"></div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col">
+                <button class="btn btn-light specie_button" data-markers="generalMarkers" data-specie="generales">Ver
+                    ubicación de fósiles en el mapa</button>
+            </div>
         </div>
         <!--Fin del mapa-->
     </div>

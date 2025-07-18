@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/cingulados.css" />
     <link rel="icon" href="./icons/especies/Glyptotherium.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
 </head>
 
 <body>
@@ -104,34 +111,34 @@
         <div class="row">
             <div class="col">
                 <p class="info">
-                    Los cingulados son un orden de mamíferos placentarios naturales del 
-                    continente americano cuyas especies son llamadas armadillos. Las familias 
+                    Los cingulados son un orden de mamíferos placentarios naturales del
+                    continente americano cuyas especies son llamadas armadillos. Las familias
                     Dasypodidae y Chlamyphoridae son las únicas que sobreviven hoy en día.
-                    Durante el Pleistoceno y períodos anteriores, además de los modernos 
-                    armadillas existieron también armadillos gigantes, como los gliptodontos, 
-                    que se diferenciaron en el Eoceno Superior y que tenían un cráneo y un 
+                    Durante el Pleistoceno y períodos anteriores, además de los modernos
+                    armadillas existieron también armadillos gigantes, como los gliptodontos,
+                    que se diferenciaron en el Eoceno Superior y que tenían un cráneo y un
                     caparazón formado por muchas piezas pequeñas fusionadas y, en ocasiones,
-                    una cola en forma de maza. Muestran una notable convergencia con las tortugas 
+                    una cola en forma de maza. Muestran una notable convergencia con las tortugas
                     y algunos dinosaurios.
                 </p>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col image-col">
-                <img class="img-fluid prev-image shadow rounded" src="./images/glyptotherium_bones.png"/>
+                <img class="img-fluid prev-image shadow rounded" src="./images/glyptotherium_bones.png" />
                 <figcaption class="blockquote-footer pt-4">
                     Imagen generada por: <cite title="Source Title">Inteligencia artificial</cite>
                 </figcaption>
             </div>
             <div class="col">
                 <p class="info">
-                    Desde hace varios millones de años, este peculiar grupo de mamíferos habita 
-                    nuestro continente. Su nombre alude a la "armadura" que recubre su cuerpo 
+                    Desde hace varios millones de años, este peculiar grupo de mamíferos habita
+                    nuestro continente. Su nombre alude a la "armadura" que recubre su cuerpo
                     dorsalmente.
-                    Los acorazados o cingulados pertenecen a un grupo mayor de mamíferos que se 
+                    Los acorazados o cingulados pertenecen a un grupo mayor de mamíferos que se
                     denominan xenarthros, un grupo de mamíferos exclusivo del continente americano.
                     Se diferencian de los otros representantes del grupo, y de todos los demás mamíferos,
-                    por la presencia de pequeños osículos (osteodermos) en su piel que articulan entre sí 
+                    por la presencia de pequeños osículos (osteodermos) en su piel que articulan entre sí
                     formando un caparazón dorsal.
                 </p>
             </div>
@@ -139,15 +146,15 @@
         <div class="row">
             <div class="col">
                 <p class="info">
-                    Este caparazón está separado en tres estructuras: un escudete cefálico, que recubre 
-                    la cabeza; una coraza dorsal que recubre la mayor parte del cuerpo dorsal y 
+                    Este caparazón está separado en tres estructuras: un escudete cefálico, que recubre
+                    la cabeza; una coraza dorsal que recubre la mayor parte del cuerpo dorsal y
                     lateralmente; y un estuche caudal que recubre la cola.
-                    En las especies actuales, estos osteodermos están recubiertos por escamas córneas 
-                    y están asociados a otras estructuras típicas de la piel de los mamíferos, como pelos 
-                    y glándulas sudoríparas y sebáceas. Esta combinación es única entre todos los animales 
+                    En las especies actuales, estos osteodermos están recubiertos por escamas córneas
+                    y están asociados a otras estructuras típicas de la piel de los mamíferos, como pelos
+                    y glándulas sudoríparas y sebáceas. Esta combinación es única entre todos los animales
                     conocidos hasta el momento.
-                    La coraza dorsal de los armadillos es móvil y tiene la capacidad de flexionarse en su 
-                    zona media. Tiene dos escudos fijos (escapular y pélvico) entre los cuales se intercala 
+                    La coraza dorsal de los armadillos es móvil y tiene la capacidad de flexionarse en su
+                    zona media. Tiene dos escudos fijos (escapular y pélvico) entre los cuales se intercala
                     una región compuesta por hileras de osteodermos parcialmente solapadas (bandas móviles)
                     que funcionan como un "fuelle", permitiendo que se expandano se plieguen.
                 </p>
@@ -156,16 +163,16 @@
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
                 <p class="info">
-                    El cráneo es alargado y tubular o aplanado, y la mandíbula es delgada y alargada. 
-                    Sus dientes son simples y, a diferencia de la mayoría de los mamíferos, son todos iguales 
+                    El cráneo es alargado y tubular o aplanado, y la mandíbula es delgada y alargada.
+                    Sus dientes son simples y, a diferencia de la mayoría de los mamíferos, son todos iguales
                     de forma cilíndrica y crecen durante toda la vida.
                     Los armadillos más antiguos se hallaron en Brasil y en la Patagonia argentina y vivieron
-                    hace unos 50 millones de años. Los primeros armadillos pertenecían a grupos ya extintos 
+                    hace unos 50 millones de años. Los primeros armadillos pertenecían a grupos ya extintos
                     a partir de los cuales habrían evolucionado muchos de los grupos que hoy conocemos.
                 </p>
             </div>
             <div class="col image-col animation-second">
-                <img class="img-fluid rounded shadow prev-image" src="./images/glyptotherium_skull.jpg"/>
+                <img class="img-fluid rounded shadow prev-image" src="./images/glyptotherium_skull.jpg" />
                 <figcaption class="blockquote-footer pt-4">
                     Imagen obtenida de: <cite title="Source Title">Wikipedia</cite>
                 </figcaption>
@@ -175,7 +182,7 @@
         <!--Especies-->
         <div class="row mt-4 text-center">
             <div class="col">
-                <h2 class="subtitle">Especies</h2>
+                <h2 class="title">Especies</h2>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2">
@@ -184,15 +191,15 @@
                 <p class="info">
                     <i>Glyptodon</i> es un género extinto de grandes mamíferos acorazados
                     pertenecientes a la subfamilia <i>Glyptodontinae</i>, emparentado con
-                    armadillos actuales, que vivió durante la época del Pleistoceno en 
+                    armadillos actuales, que vivió durante la época del Pleistoceno en
                     América del Sur. Con su caparazón óseo redondeado y extremidades agazapadas,
                     recuerda superficialmente a las tortugas, y a los dinosaurios anquilosaurios,
-                    como ejemplo de la evolución convergente de linajes distantes hacia formas 
+                    como ejemplo de la evolución convergente de linajes distantes hacia formas
                     similares.
                 </p>
             </div>
             <div class="col image-col animation-first">
-                <img class="img-fluid shadow rounded prev-image" src="./icons/especies/Glyptotherium.webp"/>
+                <img class="img-fluid shadow rounded prev-image" src="./icons/especies/Glyptotherium.webp" />
                 <figcaption class="blockquote-footer pt-4">
                     Ilustración creada por: <cite title="Source Title">Joaquín Eng</cite>
                 </figcaption>
@@ -200,7 +207,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 mt-3">
             <div class="col image-col order-2 order-md-1 animation-second">
-                <img class="img-fluid shadow rounded prev-image" src="./icons/especies/Dasypus_bellus.png"/>
+                <img class="img-fluid shadow rounded prev-image" src="./icons/especies/Dasypus_bellus.png" />
                 <figcaption class="blockquote-footer pt-4">
                     Ilustración creada por: <cite title="Source Title">Joaquín Eng</cite>
                 </figcaption>
@@ -208,17 +215,75 @@
             <div class="col order-1 order-md-2">
                 <h2 class="subtitle">Armadillo <i>Dasypus bellus</i></h2>
                 <p class="info">
-                    <i>Dasypus bellus</i> es una especie extinta de armadillo de la familia 
-                    <i>Dasypodidae</i> que existió en Norte y Suramérica durante el Plioceno 
-                    y Pleistoceno. La especie vivió desde hace 1,8 millones de años hasta 
+                    <i>Dasypus bellus</i> es una especie extinta de armadillo de la familia
+                    <i>Dasypodidae</i> que existió en Norte y Suramérica durante el Plioceno
+                    y Pleistoceno. La especie vivió desde hace 1,8 millones de años hasta
                     hace 11,000 años.
-                    Era ligeramente más grande que la especie relacionada, el armadillo de 
-                    nueve bandas (<i>Dasypus novemcinctus</i>). Sus fósiles se han hallado 
-                    desde Bolivia, Argentina y Brasil hasta los estados estadounidenses de 
+                    Era ligeramente más grande que la especie relacionada, el armadillo de
+                    nueve bandas (<i>Dasypus novemcinctus</i>). Sus fósiles se han hallado
+                    desde Bolivia, Argentina y Brasil hasta los estados estadounidenses de
                     Florida, Nuevo México, Iowa e Indiana.
                 </p>
             </div>
         </div>
+
+        <!--Mapa de especies-->
+        <div class="row text-center mt-3">
+            <div class="col">
+                <h2 class="subtitle">Ubicación de fósiles encontrados por especie</h2>
+            </div>
+        </div>
+        <div class="row low-pad-x">
+            <div id="map" style="height: 20rem; z-index:5;"></div>
+        </div>
+        <div class="row my-3">
+            <div class="col d-flex justify-content-center gap-2">
+                <button class="map-button specie_button" data-markers="markersGliptodonte" data-specie="Gliptodonte <i>Glyptotherium</i>">
+                    <img src="./icons/btn_icon/gliptodonte_btn_icon.webp"
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersArmadillo" data-specie="Armadillo <i>Dasypus bellus</i>">
+                    <img src="./icons/btn_icon/armadillo_btn_icon.webp" 
+                    class="img-fluid map-button-image"/>
+                </button>
+            </div>
+        </div>
+        <!--Fin del mapa de especies-->
+
+        <!--Referencias por sección-->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="accordion" id="referencias">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#referencias-collapse" aria-expanded="false"
+                                aria-controls="referencias-collapse">
+                                Referencias
+                            </button>
+                        </h2>
+                        <div id="referencias-collapse" class="accordion-collapse collapse"
+                            data-bs-parent="#referencias">
+                            <div class="accordion-body">
+                                <ul class="references-list">
+                                    <li class="reference-item">
+                                        <p class="reference">
+                                            Carbot-Chanona, G. y Gómez-Pérez, L.E. (2023). First record of the collared
+                                            peccary <i>Dicotyles tajacu</i> (Artiodactyla, Tayassuidae), in the
+                                            Gliptodonte
+                                            locality, Villaflores municipality, Chiapas. <i>Paleontología Mexicana</i>,
+                                            12(2):
+                                            53-62.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin de las referencias por sección-->
     </main>
     <!--Fin Main content-->
 
@@ -231,12 +296,13 @@
                     <img class="img img-fluid" id="museo-footer-logo" src="./icons/logo-museo-corregido.png">
                 </a>
                 <a href="https://www.semahn.chiapas.gob.mx/portal/" target="_blank">
-                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png"/>
+                    <img class="img img-fluid icon pt-4" src="./icons/logo_semahn.png" />
                 </a>
             </div>
             <div class="col footer-center-col py-5">
                 <div class="link-row d-flex gap-2">
-                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank" class="icon-link">
+                    <a href="https://www.facebook.com/profile.php?id=100057240378734&locale=es_LA" target="_blank"
+                        class="icon-link">
                         <img src="./icons/facebook-brands.svg" class="iFrame invert" />
                     </a>
                     <a href="https://sketchfab.com/MuseoPaleontologia" target="_blank" class="icon-link">
@@ -266,7 +332,10 @@
             </div>
             <div class="col footer-center-col py-3">
                 <h5 class="footer-subtitle">Ubicación</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.0865336109491!2d-93.10655939045783!3d16.75944616162327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd89ad68b7d8d%3A0xc76178acbd70ba82!2sMuseo%20de%20Paleontolog%C3%ADa%20%22Eliseo%20Palacios%20Aguilera%22!5e0!3m2!1ses!2smx!4v1750087950478!5m2!1ses!2smx" width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.0865336109491!2d-93.10655939045783!3d16.75944616162327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd89ad68b7d8d%3A0xc76178acbd70ba82!2sMuseo%20de%20Paleontolog%C3%ADa%20%22Eliseo%20Palacios%20Aguilera%22!5e0!3m2!1ses!2smx!4v1750087950478!5m2!1ses!2smx"
+                    width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="row footer-sub-footer">
@@ -285,6 +354,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/mapApp.js"></script>
 </body>
 
 </html>

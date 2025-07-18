@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./css/artiodactilos.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" href="./icons/especies/Bison_antiquus.webp" type="image/png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
 </head>
 
 <body>
@@ -129,66 +136,38 @@
                     raros en las faunas del Eoceno temprano, pero son mucho más diversos durante el Eoceno medio.
                 </p>
                 <p class="info">
-                    El registro fósil de Artiodactyla en el Pleistoceno de Chiapas incluye al camello <i>Camelops hesternus</i>
+                    El registro fósil de Artiodactyla en el Pleistoceno de Chiapas incluye al camello <i>Camelops
+                        hesternus</i>
                     , a la llama <i>Palaeolama mirifica</i>, al bisonte <i>Bison antiquus</i>, al venado cola blanca
                     <i>Odocoileus virginianus</i> y al pecarí de collar <i>Dicotyles tajacu</i>.
                 </p>
                 <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#fosilModal">
-                    Leer más
+                    Ver la distribución de la especie en el mapa
                 </button> -->
-            </div>
-        </div>
-    </div>
-
-    <!--Contenedor con imagen-->
-    <div class="container-fluid" id="container-image">
-        <h2 class="subtitle text-light fs-2">Clasificación</h2>
-    </div>
-
-    <!--Contenedor con información de clasificación-->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col">
-                <p class="info">
-                    Esta clasificación se basa en el análisis de Spaulding et al., 2009 y las familias actuales
-                    reconocidas en la obra Mammal Species of the World publicada en 2005.Actualmente, los cetáceos y
-                    los artiodáctilos han sido situados en Cetartiodactyla como grupos hermanos, aunque el análisis de
-                    ADN
-                    ha mostrado que de hecho los cetáceos evolucionaron directamente de los Artiodactyla, por lo que
-                    deben
-                    incluirse en este orden. Cetartiodactyla es sinónimo de Artiodactyla. La teoría más reciente de los
-                    orígenes de la familia Hippopotamidae sugiere que los hipopótamos y ballenas comparten un ancestro
-                    común
-                    semiacuático que divergió de los otros artiodáctilos hace cerca de 60 millones de años.Este
-                    grupo ancestral hipotético probablemente se dividió en dos ramas hace unos 54 millones de años.Una
-                    de estas ramas evolucionaría en los cetáceos, posiblemente iniciando con la protoballena Pakicetus
-                    hace
-                    52 millones de años, junto con otras ballenas primitivas conocidas colectivamente como los
-                    Archaeoceti,
-                    las cuales finalmente desarrollarían adaptaciones hacia la vida completamente acuática que tienen
-                    los
-                    cetáceos modernos.
-                </p>
-            </div>
-        </div>
-        <div class="row text-center mt-5">
-            <div class="col">
-                <h2 class="title">Especies</h2>
             </div>
         </div>
     </div>
 
     <!--Contenedor para las especies-->
     <div class="container mt-3 mb-5">
+        <div class="row mb-4 text-center">
+            <div class="col">
+                <h2 class="title">Especies</h2>
+            </div>
+        </div>
         <div class="row row-cols-1 row-cols-md-2 animation-first">
             <div class="col">
                 <h2 class="subtitle">Vendado cola blanca <i>Odocoileus virginianus</i></h2>
                 <p class="info">
-                    El venado cola blanca es una especie de mamífero artiodáctilo de la familia de los cérvidos. Vive en
-                    diferentes ecosistemas de América, desde los canadienses, en la región subártica, pasando por los
-                    bosques secos de las laderas montañosas de México, las selvas húmedas tropicales de América Central
-                    y del Sur, hasta los bosques secos ecuatoriales del norte del Perú y otras áreas boscosas
-                    sudamericanas.Se alimenta de arbustos y hierbas.
+                    Venado de tamaño mediano, que puede alcanzar hasta 3.30 m de largo, 1.20 m hasta los hombros y 140
+                    kg de peso. Habita bordes y claros de bosques, orillas de pantanos, riberas de arroyos, praderas con
+                    matorrales, zonas abiertas con matorrales. Se alimenta de pasto, hojas, hierbas, acículas, frutos,
+                    herbáceas, brotes, ramitas de arbustos y árboles, y setas.
+                </p>
+                <p class="info">
+                    Su registro fósil en México es escaso y sólo se conocen restos de esta especie en Chihuahua,
+                    Jalisco, San Luis Potosí, Estado de México, Puebla, Yucatán y Chiapas; para este último estado se
+                    han recuperado gran cantidad de astas y algunos huesos poscraneales en el municipio de Villaflores.
                 </p>
             </div>
             <div class="col image-col">
@@ -208,15 +187,15 @@
             <div class="col order-1 order-md-2">
                 <h2 class="subtitle">Pecarí de collar <i>Dicotyles tajacu</i></h2>
                 <p class="info">
-                    El pecarí de collar o taitetú, es una especie de mamífero
-                    de la familia Tayassayauidae. Posee pelaje de cerdas
-                    castaño-negruzcas y una mancha blanca como collar. Secreta
-                    un aceite con olor almizclado. Se distribuye desde el sur de
-                    Estados Unidos hasta el norte de Argentina.
-                    Habita en los montes xerófilos y desérticos, pastizales tropicales
-                    y subtropicales, montes bajos, sabanas y pastizales inundados,
-                    bosques de hojas anchas tropicales y subtropicales, como en otros
-                    hábitats.
+                    Durante el Pleistoceno, habitaron en América del Norte varias especies de pecaríes. Una de ellas fue
+                    el pecarí de collar (<i>Dicotyles tajacu</i>), la cual aún existe hasta nuestros días. Su registro
+                    fósil es
+                    escaso en México y sólo ha sido documentado para la región central de Chiapas y para las grutas
+                    sumergidas que se ubican en Yucatán y Quintana Roo.
+                </p>
+                <p class="info">
+                    Su presencia en el Pleistoceno tardío de Chiapas se basa en la mitad de un húmero izquierdo
+                    recolectado en el municipio de Villaflores
                 </p>
             </div>
         </div>
@@ -266,6 +245,90 @@
                 </p>
             </div>
         </div>
+        <div class="row text-center mt-3">
+            <div class="col">
+                <h2 class="subtitle">Ubicación de fósiles encontrados por especie</h2>
+            </div>
+        </div>
+        <div class="row low-pad-x">
+            <div id="map" style="height: 20rem; z-index:5;"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col d-flex justify-content-center gap-2">
+                <button class="map-button specie_button" data-markers="markersVenados" data-specie="Venado cola blanca">
+                    <img src="./icons/btn_icon/venado_btn_icon.png"
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersPecari" data-specie="Pecarí <i>Dicotyles</i>">
+                    <img src="./icons/btn_icon/pecari_btn_icon.png" 
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersBisonte" data-specie="<i>Bison antiquus</i>">
+                    <img src="./icons/btn_icon/bison_btn_icon.webp"
+                    class="img-fluid map-button-image"/>
+                </button>
+                <button class="map-button specie_button" data-markers="markersCamello" data-specie="Camello <i>camelops</i>">
+                    <img src="./icons/btn_icon/camelops_btn_icon.webp" class="img-fluid map-button-image"/>
+                </button>
+            </div>
+        </div>
+        <!--Referencias por sección-->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="accordion" id="referencias">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#referencias-collapse" aria-expanded="false"
+                                aria-controls="referencias-collapse">
+                                Referencias
+                            </button>
+                        </h2>
+                        <div id="referencias-collapse" class="accordion-collapse collapse"
+                            data-bs-parent="#referencias">
+                            <div class="accordion-body">
+                                <ul class="references-list">
+                                    <li class="reference-item">
+                                        <p class="reference">
+                                            Carbot-Chanona, G. y Gómez-Pérez, L.E. (2023). First record of the collared
+                                            peccary <i>Dicotyles tajacu</i> (Artiodactyla, Tayassuidae), in the
+                                            Gliptodonte
+                                            locality, Villaflores municipality, Chiapas. <i>Paleontología Mexicana</i>,
+                                            12(2):
+                                            53-62.
+                                        </p>
+                                    </li>
+                                    <li class="reference-item">
+                                        <p class="reference">
+                                            Long, J.L. (2003). Introduced mammals of the World: their history,
+                                            distribution and influence. CSIRO Publishing, Australia, 589 pp.
+                                        </p>
+                                    </li>
+                                    <li class="reference-item">
+                                        <p class="reference">
+                                            Montellano-Ballesteros, M. y Carbot-Chanona, G. (2010). Presencia de
+                                            <i>Odocoileus</i> (Artiodactyla, Cervidae) en el Pleistoceno de Chiapas,
+                                            México.
+                                            En: Fernando A. Cervantes, Julieta Vargas-Cuenca y Yolanda Hortelano-Moncada
+                                            (eds.). 60 años de la Colección Nacional de Mamíferos del Instituto de
+                                            Biología, UNAM. Aportaciones al Conocimiento y Conservación de los Mamíferos
+                                            Mexicanos. Universidad Nacional Autónoma de México, pp. 291-298.
+                                        </p>
+                                    </li>
+                                    <li class="reference-item">
+                                        <p class="reference">
+                                            Prothero, D.R. y Foss, S.E. (2007). <i>The evolution of artiodactyls</i>. The Johns
+                                            Hopkins University Press, Maryland, Baltimore, 367 pp.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin de las referencias por sección-->
     </div>
 
     <!-- Modal -->
@@ -277,23 +340,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...El hallazgo realizado por un grupo de reconocidos expertos mexicanos, entre los que se encuentra
-                    un investigador de la Secretaría de Medio Ambiente e Historia Natural (Semahn) data de hace 23
-                    millones de años. Así mismo en la localidad de Yolomécatl, Oaxaca, fueron reportados otros restos
-                    con una edad de 30 millones de años.
-
-                    El investigador adscrito al Museo de Paleontología Eliseo Palacios Aguilera, de la Semahn, quien es
-                    uno de los autores de este estudio indicó que estos descubrimientos son de gran relevancia, ya que
-                    aportan conocimientos para entender cómo era la vida en México hace millones de años, qué relación
-                    tenía la fauna y flora con las de otras regiones del mundo y qué factores influyeron en su
-                    extinción.
-
-                    Cabe mencionar que los antracoterios (Familia Anthracotheriidae), son un grupo extinto de
-                    artiodáctilos, lejanamente emparentados con los hipopótamos y ballenas, que vivió en Asia, Europa,
-                    parte de África y América desde mediados del Eoceno hasta principios del Mioceno, sin embargo,
-                    fósiles de estos animales no habían sido encontrados en México hasta este reporte publicado en el
-                    presente año, donde Chiapas nuevamente da el registro paleontológico de piezas únicas que cambian la
-                    historia hasta ahora conocida sobre la paleo diversidad de la fauna.
+                    <!-- <div id="map" style="height: 25rem; z-index:5;"></div> -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -301,6 +348,7 @@
             </div>
         </div>
     </div>
+    <!--Fin del modal-->
 
     <!--Footer de la página-->
     <footer class="container-fluid main-footer">
@@ -368,6 +416,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/mapApp.js"></script>
 </body>
 
 </html>
