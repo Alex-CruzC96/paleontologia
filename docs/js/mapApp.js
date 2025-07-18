@@ -88,11 +88,12 @@ const markersGonfoterio = [
 
 //Marcadores de cingulados
 const markersGliptodonte = [
-    {'location':[15.764827,-92.264891],'town_name':'Chicomuselo'}
+    {'location':[16.235060,-93.266967],'town_name':'Villa Flores'},
+    {'location':[16.185110,-93.268307],'town_name':'Villa Corzo'}
 ]
 
 const markersArmadillo = [
-    {'location':[16.148799,-94.092977],'town_name':'La gloria'}
+    {'location':[16.185110,-93.268307],'town_name':'Villa Corzo'}
 ]
 
 //Marcadores de Pilosos
